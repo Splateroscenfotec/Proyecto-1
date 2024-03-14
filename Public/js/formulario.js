@@ -1,7 +1,6 @@
 'use extrict'
 
-
-const b_RegistrarUsuario = document.getElementById(btn-RegistrarUsuario)
+const b_RegistrarUsuario = document.getElementById('btn-RegistrarUsuario')
 const v_NumeroIdentificacion = document.getElementById('inputNumeroIdentificacion');
 const v_Nombre = document.getElementById('inputNombre');
 const v_Apellido = document.getElementById('inputApellido');    
@@ -107,42 +106,42 @@ function principal() {
             title: "Campos vacíos",
             text: "Debe completar todos los campos",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"¡Entendido!"
           });
     }else if(error_nombre){
         Swal.fire({
             title: "Nombre incorrecto",
             text: "Favor revisar el nombre, solo se aceptan letras",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"¡Entendido!"
           });
     }else if(error_apellido){
         Swal.fire({
-            title: "Correo incorrecto",
-            text: "Favor ingresar un email válido",
+            title: "Apellido(s) incorrecto(s)",
+            text: "Favor revisar el campo de apellido, solo se aceptan letras",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"¡Entendido!"
           });
     }else if(error_identificacion){
         Swal.fire({
-            title: "Correo incorrecto",
-            text: "Favor ingresar un email válido",
+            title: "Número de identificación incorrecto",
+            text: "Favor ingresar un número de identificación válido, en el formato requerido (1-2345-6789)",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"¡Entendido!"
           });
     }else if(error_correo){
         Swal.fire({
             title: "Correo incorrecto",
             text: "Favor ingresar un email válido",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"¡Entendido!"
           });
     }else if(error_telefono){
         Swal.fire({
             title: "Teléfono incorrecto",
             text: "El teléfono debe cumplir con el formato:2222-2222",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"¡Entendido!"
           });
     }
     else{
@@ -151,10 +150,10 @@ function principal() {
             text: "Su solicitud se envió correctamente",
             icon: "success",
           });
-          limpiarCampos();
+          LimpiarCampos();
     }
 }
 
   
 
-btn-RegistrarUsuario.addEventListener("click",principal);
+b_RegistrarUsuario.addEventListener("click",principal);
