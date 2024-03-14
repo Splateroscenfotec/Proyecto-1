@@ -35,7 +35,7 @@ function ValidarNombre() {
     return error;
 }
 
-function ValidarApellidos() {
+function ValidarApellido() {
     let error = false;
     let input_apellido = v_Apellido.value;
     let expresion =/^[a-zA-ZáéíóúñÑü]+/;
@@ -99,7 +99,7 @@ function principal() {
     let error_campos_vacios=ValidarCamposVacios();
     let error_identificacion = ValidarIdentificacion();
     let error_nombre = ValidarNombre();
-    let error_apellido = ValidarApellidos();
+    let error_apellido = ValidarApellido();
     let error_correo = ValidarEmail();
     let error_telefono = ValidarTelefono();    
     if(error_campos_vacios){
