@@ -7,23 +7,199 @@ html {
     font-size: 18px;
     padding: 0;
     margin: 0;
+    font-family: Roboto;
 }
 
+/* --------------------------------------Inicio código header-------------------------------------- */
+header{
+    height: 140px;
+    width: 100%;
+    position: sticky; 
+    top: 0;
+}
 
+#header{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#header span{
+    line-height: 5;
+}
+
+    #logo{
+        width: 25%;        
+    }
+    #logo img {
+        width:100%
+    }
+    #logo img:hover{
+        background-color: #fff;
+
+    }
+
+    #buscador{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;    
+        margin-left: 20px;
+    }
+
+    #buscador input {
+        padding: 5px 5px 5px 10px;
+        width: 80%;
+        height: 25px;
+        background-color: #fdd1a9;
+        border: none;
+    }
+    
+    #buscador button {
+        padding: 5px;
+        font-size: 1.25rem;
+        width: 45px;
+        height: 45px;    
+        border-radius: 5px;
+        background-color: #9cca92;
+        border: none;
+    }
+    
+    #buscador button:hover {
+        background-color: #f7953e;
+        cursor: pointer;
+    }
+    
+#headerLoginComprar{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;    
+}
+#headerLoginComprar a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #617c5c;
+    font-family: Roboto;
+    line-height: 2.5;
+}
+    #login{
+        padding-left: 50px;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #login span {
+        font-size: .45rem;
+        font-family: Roboto;
+        line-height: 2.5;
+    }
+    #login i{
+        font-size: 2rem;
+        color: #617c5c
+    }
+    #btn-Comprar{
+        flex-direction: column;
+        font-size: 2.5rem;  
+    }
+
+    a:hover{
+        cursor: pointer;
+    }
+/* --------------------------------------Fin código header --------------------------------------*/
+
+/* --------------------------------------Inicio código nav-------------------------------------- */
+nav{
+    background-color: #9cca92;
+    height: 20px;
+    width: 100%; 
+} 
+
+#nav a {
+    color: #465b4f;  
+    font-size: .65rem;
+    font-family: Roboto;    
+    padding-left: 20px;
+}
+
+#nav a:hover{
+    background-color: #d5e7ce;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+/*-------------------------------------- Fin código nav-------------------------------------- */
+
+
+/* --------------------------------------Inicio código sección Resultados del Buscador-------------------------------------- */
+#resultadosBuscador {
+    margin: 20px;
+}
+/*-------------------------------------- Fin código sección Resultados del Buscador-------------------------------------- */
+
+
+
+
+/* --------------------------------------Inicio código footer-------------------------------------- */
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #d5e7ce;
+    }
 #somosFooter{
-    margin: 10px;
+    width: 40%;
+    line-height: 1.5;
 }
+#footer h1{
+    font-family: Playfair;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #617c5c;
+}
+#footer p{
+    font-family: Roboto;
+    font-size: .75rem;
+    color: #465b4f;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #465b4f;
+    line-height: 2;
+}
+
+#CopyrightFooter{
+    width: 40%;
+    padding-left: 50px;
+    
+}
+
+#logoFooter{
+    width:50px;
+}
+
+#contactoFooter {
+    width: 20%;
+}
+
+#contactoFooter span{
+    font-size: .5rem;
+}
+
+/* --------------------------------------Fin código footer-------------------------------------- */
+
 
 #carrusel{
     background-color: aqua;
+
 }
 #registroLanding{
     background-color: blue;
-}
-#somosFooter{
-    background-color: red;
-}
-#CopyrightFooter{background-color: yellow;}
-#contactoFooter {
-    background-color: blueviolet;
 }
