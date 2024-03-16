@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,300;5..1200,400;5..1200,500;5..1200,600;5..1200,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+html {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+
+#somosFooter{
+    margin: 10px;
+}
+
+#carrusel{
+    background-color: aqua;
+}
+#registroLanding{
+    background-color: blue;
+}
+#somosFooter{
+    background-color: red;
+}
+#CopyrightFooter{background-color: yellow;}
+#contactoFooter {
+    background-color: blueviolet;
+}
