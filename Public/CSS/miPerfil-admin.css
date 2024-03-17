@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,300;5..1200,400;5..1200,500;5..1200,600;5..1200,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+html {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    background-color: rgba(237, 242, 194, .01) ;
+}
+#miPerfil h1 {
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 2rem;
+    font-family: Playfair;
+    font-weight: 500;
+    color: #617c5c;
+}
+
+#miPerfil input {
+    color: #617c5c;
+    padding-top: 20px;
+}
+
+.miPerfil {
+    height: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoMiPerfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    
+    height: 380px;
+    padding: 30px;
+}
+
+.miPerfil img {
+    padding-right: 20px;
+    height: 50%;
+}
+
+.datosMiPerfil {
+    background-color: #d5e7ce;
+    width: 90vh;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #d5e7ce;
+    padding-left: 20PX;
+}
+
+#nombreMiPerfilOutput, #telefonoMiPerfilOutput, #emailMiPerfilOutput, #identificacionMiPerfilOutput, #claveMiPerfilOutput{
+    font-family: Playfair;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    
+}
+
+.datosMiPerfil label {
+    line-height: 2.5;
+    font-family: Roboto;
+    color: #42553F;
+    font-size: 1.075rem;
+    
+   }
+   
+.datosMiPerfil input {
+    font-size: .90rem;
+    width: 300px;
+    font-family: Roboto;
+    color: #1E2822;
+}
+
+
+.datosMiPerfil button {
+    border-radius: 5px;
+    color: #1E2822;
+    background-color: #f7953e;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    width: 50%;
+    
+  }
+
+#btn-EditarMiPerfil {
+    color: #42553F;
+    border: solid 2px #9cca92;
+    background-color: #d5e7ce;
+}
+
+#btn-EditarMiPerfil:hover, button:hover {
+    background-color: #d8e269;
+    color: #1E2822;
+    cursor: pointer;
+  }
+
+.error {
+    border: solid 2px #f7953e;
+    background-color: #ffe6bb;
+}
+
+.datosMiPerfil i{
+    color: #617c5c;
+}

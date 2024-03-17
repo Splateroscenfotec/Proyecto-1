@@ -110,6 +110,7 @@ header{
 
     a:hover{
         cursor: pointer;
+        font-weight: 700;
     }
 /* --------------------------------------Fin código header --------------------------------------*/
 
