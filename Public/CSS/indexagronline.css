@@ -7,7 +7,7 @@ html {
     font-size: 18px;
     padding: 0;
     margin: 0;
-    font-family: Roboto;
+    background-color: rgba(237, 242, 194, .01) ;
 }
 
 /* --------------------------------------Inicio código header-------------------------------------- */
@@ -125,14 +125,10 @@ nav{
     font-size: .65rem;
     font-family: Roboto;    
     padding-left: 20px;
+    cursor: none;
 }
 
-#nav a:hover{
-    background-color: #d5e7ce;
-    padding-top: 4px;
-    padding-bottom: 3px;
-    cursor: pointer;
-}
+
 /*-------------------------------------- Fin código nav-------------------------------------- */
 
 
@@ -262,7 +258,7 @@ nav{
   }
   #registroLanding #textoLanding button {
     border-radius: 5px;
-    color: #000;
+    color: #1E2822;
     background-color: #f7953e;
     font-size: 1.2rem;
     padding: 10px;
@@ -270,7 +266,7 @@ nav{
   }
   #registroLanding #textoLanding button:hover {
     background-color: #d8e269;
-    color: black;
+    color: #1E2822;
     cursor: pointer;
   }
 /* --------------------------------------Fin código registroLanding-------------------------------------- */
