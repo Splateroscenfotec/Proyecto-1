@@ -96,7 +96,7 @@ function validarPrecio() {
 function validarImpuesto() {
     let error = false;
     let impuestosProducto = impuestosP.value;
-    let expression = /^\d+(\.\d+)?%?$/;
+    let expression = /^[0-9]{1,2}(\.[0-9]{1,2})?%$/;
     if(expression.test(impuestosProducto)==false){
         impuestosP.classList.add("error");
         error=true;
