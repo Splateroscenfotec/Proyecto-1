@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>agronline - Inicio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/registroProductos.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="icon" href="favicon.png">        
+</head>
+
+<body>
+    <header>     
+    <div id="header">
+        <div id="logo"><a href="indexagronline.html"><img src="img/logo.png" alt="logoAgronline" ></div></a>
+        
+        <div id="buscador">
+            <input type="text" placeholder="Buscar..." id="inputBuscador">
+            <button id="btn-Buscador"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="headerLoginComprar">
+            <div id="login"><a><i class="fa fa-user" aria-hidden="true"></i><span>Iniciar sesión</span></div></a>
+            <div id="btn-Comprar"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>        
+        </div>
+        <br><span>&nbsp;</span>
+    </div>
+    <nav id="nav">        
+        <a>Inicio &nbsp;</a>
+        <a>Tab 1 &nbsp;</a>
+        <a>Tab 2 &nbsp;</a>
+    </nav>
+    </header>
+<section 
+id="resultadosBuscador">   
+</section>
+
+<section id="registro">
+    <h1>Registro de productos</h1><br>
+</section>
+
+<section >
+    <div id="alinearColumnas">
+        <div id="fotoProducto">
+    <div>
+    <div id="contenedorImagen">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEXI2MYAAADQ4c53f3WXopXN3ctmbmVja2NXXlZPVk+OmY2GkYWKlYmhrZ9yenGns6XD0sG7yrkuMS3Y6dauvK16hHgpLClCSEJsdWs2OjU8QTsTFRNITUdcZFslKCQcHhsLDQutPTkNAAADiklEQVR4nO2Z6c6qMBBAO4WylMWWRUVEff+nvFNkEeFL9Oa2H8md8wuRZE6GYboxRhAEQRAEQRAEQRAEQRAEQRAEQRDEryI4F7/tsEAIpjPvfNiPFaaoqqMjINkurARXlYyNTxElHtx/XUoIzvzw1BvVmUbBOyhnwfkWQh/yAn3aOM9YWeINUQYgSyfVzrVMN6hjYwRwOidSDk/IAE4yldq6Fq/haxJuWUoBnL2vCAAsO4kM4nKzpn6kvILlfoVS0Zcvg8eupD5Nkxspv5dSwYco+1JCdQ8jJZJPPzwp7GcqhNZI8QQ6/wMikNy6lL41ySBVl2IT7ODzteciU7q4+IOUN3+DOE+Zg579+Q+eu8gUi8BbSQk/CJNh4OUpwDyqGCn7mcICb96lRGcK+vi00jiLChdS9jMlDhh/KYU9ovWzCwR9SzoDjsvVqOAmU0yspPCD9HHaci80/lvBQ0koXqUc1BQGeJfqTEjVHFEKS67mojDpmaRcZMpfvb4Erlp5EOOlhJMyA9Fdz1IOMsWqVaZUC7cGTFzego/RRQw5n6QcZIqp6+rrU2FxizGs8OBamhsahlp3lSkevEmZubjWpnvq++CCdtEk5SJT4q2jYxMYmiW/TqKq6d+js0w951OTFP6E+Jmeap71ovmFvUpZXpMupbA/wQ1yE1JdjMD4VAy1eJHK7a4cllI8gg6bfMXNoHeaF56m86sXqdiq01IKe9RR4fVRCwXz6ML6UjOPjVKPypmUKSNTLRGEGH65ntAtVvck9ax7J1KseeZLYVm1Yxcfn5NY67NUZ7WoXqREDtf+HsexBwe9tycbkOUk9XAkVWbwGFqUCOD2HhVr/YZD4iC1KDh7UrUqph6A7WBdNCKEpB6kGkhtpmqW6qYppqnydSLMEBgPUh50Fp1mqQLfzhj9sfl2uGfWfb2U3zR6/cC/l4LHYVxMdVhgG4stzi6jVFoUbqSu44ozgXu6uRTNglGqhcB+oX+7bIfQ6t7nsOuigvAjhg0OJ7OEvW0F7XTTbH/bi3+xEXu2vhG7zy1rxnWaygsE466+lMm5P/qAIq63tv1T+5v7zByDlAnkpTkNKUuW5XFrjPKD/uF8xIFSj8a5ijnSq/uzj1PoMxxzXAX/CYGzuqTrjWJZqX0cgZqNDoBjVFe7OpM9nHNzpLcjI7bDY2uCIAiCIAiCIAiCIAiCIAiCIAiC+A/5A7QbMYWOlsiGAAAAAElFTkSuQmCC" id="adjuntarFoto"/>
+    </div><p>Inserte su imagen</p><br>
+    <input id="adjuntarFoto" type="file"  onchange="loadFile(event)"/>
+    </div>
+    
+    <p>Inserte su video</p><br>
+    <input id="adjuntarVideo" type="file" accept="video/*" onchange="loadVideo(event)"/>
+
+</div> 
+    <form id="registrarProductos">
+    <div id="informacionDeProductos">
+    <label class="infoproducto" for="nombre">Nombre: </label>
+    <input class="infoproducto" type="text" id="nombre" required><br>
+
+    <label class="infoproducto" for="descripcion">Descripción:</label>
+    <input class="infoproducto" type="text" id="descripcion" required><br>
+
+    <label class="infoproducto" for="inventario">Inventario disponible</label>
+    <input class="infoproducto" type="text" id="inventario" required><br>
+
+    <label class="infoproducto" for="categoria">Categoria</label>
+    <input class="infoproducto" type="text" id="categoria" required><br>
+
+    <label class="infoproducto" for="precio">Precio Unitario</label>
+    <input class="infoproducto" type="text" id="precio" required><br>
+
+    <label class="infoproducto" for="cantidad">Cantidad</label>
+    <input class="infoproducto" type="number" id="cantidad" required><br>
+
+    <label class="infoproducto" for="impuestos">Impuestos de venta</label>
+    <input class="infoproducto" type="text" id="impuestos" required><br>
+
+    <button type="button" id="botonRegistrar">Registrar</button>
+</div>
+
+</div>
+ 
+</section> 
+
+
+<section>
+    <footer id="footer">
+        <div id="somosFooter">
+            <h1>Quiénes somos</h1>
+            <p>Somos una empresa costarricense comprometida con la  promoción y venta de productos agropecuarios nacionales de la más alta calidad. Nuestro objetivo es fomentar el consumo de productos locales, apoyando a los agricultores de nuestra región.</p>
+        </div>
+        <div id="CopyrightFooter">
+            
+        </div>
+        <div id="contactoFooter">
+            <h1>Contáctenos</h1>
+            <p><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i>@agronline</a> </p>
+            <p><a href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-square"></i>@agronline</a></p>
+            <p><a href="https://wa.me/50683970896" target="_blank"><i class="fab fa-whatsapp-square"></i></a> 8000-0000</p>  
+            <img id="logoFooter" src="img/logoVertical.png" alt="logoAgronline" >
+            <br>
+            <p><span> Copyright 2024</span></p>      
+        </div>
+    
+    </footer>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="javascript/registroProductos.js"></script>
+    <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
+</body>
+</html>
