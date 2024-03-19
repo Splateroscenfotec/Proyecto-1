@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>agronline - Inicio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Public/CSS/indexagronline.css">
+    <link rel="stylesheet" href="/Public/CSS/reset.css">
+    <link rel="stylesheet" href="/Public/CSS/footerHeaderNav.css">
+    <link rel="stylesheet" href="/Public/CSS/iniciosesion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="icon" href="favicon.png">    
+    
+</head>
+
+<body>
+    <header>     
+    <div id="header">
+        <div id="logo"><a href="/indexagronline.html"><img src="/Public/img/logo.png" alt="logoAgronline" ></div></a>
+        
+        <div id="buscador">
+            <input type="text" placeholder="Buscar..." id="inputBuscador">
+            <button id="btn-Buscador"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="headerLoginComprar">
+            <div id="login"><a><i class="fa fa-user" aria-hidden="true"></i><span>Iniciar sesión</span></div></a>
+            <div id="btn-Comprar"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>        
+        </div>
+        <br><span>&nbsp;</span>
+    </div>
+    <nav id="nav">        
+        <a>Bienvenidos a la feria virtual</a>
+    </nav>
+    </header>
+    
+    <section id="resultadosBuscador"></section>
+
+    <section class="iniciosesion">
+        <div class="contenedor">
+            <h2>Iniciar Sesión</h2>
+            <div class="tipo-identificacion">
+                <ul>
+                    <li>Cédula</li>
+                    <li>Pasaporte</li>
+                    <li>DIMEX</li>
+                </ul>
+            </div>
+            <div class="campo">
+                <label for="identificacion">Número de Identificación</label>
+                <input type="text" id="identificacion" name="identificacion">
+            </div>
+            <div class="campo">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena">
+            </div>
+            <div class="linea"></div>
+            <button class="boton-iniciar">Iniciar sesión</button>
+            <span class="recuperar-contrasena">Recuperar contraseña</span>
+            <div class="separador"></div>
+            <p class="nuevo">¿Eres nuevo en Agronline?</p>
+            <br>
+            <p class="registrarse-como">Registrarse como:</p>
+            <div class="opciones-registro">
+                <button>Cliente</button>
+                <button>Vendedor</button>
+                <button>Administrador</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer id="footer">
+        <div id="somosFooter">
+            <h1>Quiénes somos</h1>
+            <p>Somos una empresa costarricense comprometida con la  promoción y venta de productos agropecuarios nacionales de la más alta calidad. Nuestro objetivo es fomentar el consumo de productos locales, apoyando a los agricultores de nuestra región.</p>
+        </div>
+        <div id="CopyrightFooter">
+            
+        </div>
+        <div id="contactoFooter">
+            <h1>Contáctenos</h1>
+            <p><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i>@agronline</a> </p>
+            <p><a href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-square"></i>@agronline</a></p>
+            <p><a href="https://wa.me/506" target="_blank"><i class="fab fa-whatsapp-square"></i></a> 8000-0000</p>  
+            <img id="logoFooter" src="/Public/img/logoVertical.png" alt="logoAgronline" >
+            <br>
+            <p><span> Copyright 2024</span></p>      
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/Public/js/indexagronline.js"></script>
+    <script src="/Public/js/footerHeaderNav.js"></script>
+    <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
+</body>
+</html>
