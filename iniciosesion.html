@@ -37,15 +37,20 @@
     <section id="resultadosBuscador"></section>
 
     <section class="iniciosesion">
+        <br>
         <div class="contenedor">
             <h2>Iniciar Sesión</h2>
             <div class="tipo-identificacion">
-                <ul>
-                    <li>Cédula</li>
-                    <li>Pasaporte</li>
-                    <li>DIMEX</li>
-                </ul>
-            </div>
+                <div class="inputs">                         
+                    <label for="tipo-identificacion">Tipo de Identificación</label>
+                    <select name="drop-drown" id="drop-down">
+                        <option selected="" enabled="">Cédula</option>
+                        <option>Pasaporte</option>
+                        <option>DIMEX</option>
+                    </select>
+                   </div>
+
+                   <br>
             <div class="campo">
                 <label for="identificacion">Número de Identificación</label>
                 <input type="text" id="identificacion" name="identificacion">
@@ -54,7 +59,6 @@
                 <label for="contrasena">Contraseña</label>
                 <input type="password" id="contrasena" name="contrasena">
             </div>
-            <div class="linea"></div>
             <button class="boton-iniciar">Iniciar sesión</button>
             <span class="recuperar-contrasena">Recuperar contraseña</span>
             <div class="separador"></div>
