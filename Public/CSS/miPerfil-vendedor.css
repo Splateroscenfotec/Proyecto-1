@@ -1,4 +1,5 @@
  
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
@@ -25,11 +26,22 @@ html {
 
 .miPerfil {
     height: 500px;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.tramoMiPerfil{
+    background-color: #d5e7ce;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    height: 500px;
+    padding: 30px;
+    width: 20%;
 }
 
 .fotoMiPerfil {
@@ -48,8 +60,8 @@ html {
 
 .datosMiPerfil {
     background-color: #d5e7ce;
-    width: 90vh;
-    height: 480px;
+    width: 40%;
+    height: 559px;
     display: flex;
     justify-content: left;
     flex-direction: column;
@@ -57,32 +69,37 @@ html {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border: 1px solid #d5e7ce;
-    padding-left: 20PX;
+    padding-left: 30px;
+    
 }
 
-#nombreMiPerfilOutput, #telefonoMiPerfilOutput, #emailMiPerfilOutput, #identificacionMiPerfilOutput, #claveMiPerfilOutput{
+#nombreMiPerfilOutput, #telefonoMiPerfilOutput, #emailMiPerfilOutput, #identificacionMiPerfilOutput, #claveMiPerfilOutput, #permisosTramoMiPerfilOutput, #NombreTramoMiPerfilOutput{
     font-family: Roboto;
     font-weight: 300;
+    color: #42553F;
     font-size: 1rem;
     margin-bottom: 20px;
-    color: #42553F;
+    
 }
 
-.datosMiPerfil label {
+.datosMiPerfil label, .tramoMiPerfil label {   
     line-height: 2.5;
     font-family: Roboto;
     color: #42553F;
     font-size: 1.075rem;
     
-   }
+   } 
    
-.datosMiPerfil input {
+.datosMiPerfil input, .tramoMiPerfil input {
     font-size: .90rem;
     width: 300px;
     font-family: Roboto;
     color: #1E2822;
 }
 
+.datosMiPerfil i, .tramoMiPerfil i{
+    color: #617c5c;
+}
 
 .datosMiPerfil button {
     border-radius: 5px;
@@ -94,7 +111,6 @@ html {
     border: none;
     margin-top: 20px;
     width: 30%;
-    
   }
 
 #btn-EditarMiPerfil {
@@ -105,7 +121,7 @@ html {
 
 #btn-EditarMiPerfil:hover, button:hover {
     background-color: #d8e269;
-    color: #42553F;
+    color: #1E2822;
     cursor: pointer;
   }
 
@@ -114,6 +130,3 @@ html {
     background-color: #ffe6bb;
 }
 
-.datosMiPerfil i{
-    color: #617c5c;
-}

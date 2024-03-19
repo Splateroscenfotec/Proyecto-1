@@ -6,9 +6,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/footerHeaderNav.css">
-    <link rel="stylesheet" href="CSS/miPerfil-admin.css">
+    <link rel="stylesheet" href="css/miPerfil-vendedor.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/font-awesome.min.css"/>
     <link rel="icon" href="favicon.png">        
 </head>
 
@@ -32,47 +33,54 @@
         <nav class="navbar">
             <a href="indexagronline.html" target="_blank">Inicio &nbsp;</a>
             <a>Usuarios</a>
-            <a>Catálogo</a>
             <a>Reportes</a>
+            <a>Reseñas</a>
         </nav>
     
         </header>
-    
 
 <section id="miPerfil">
     <h1>Mi perfil</h1>
+    
     <div class="miPerfil">        
         <div class="fotoMiPerfil">
-            <img src="img/profile.webp" id="fotoMiPerfilOutput"  />                
+            <img src="img/profile.webp" id="fotoMiPerfilOutput" alt="foto de perfil" />                
             <input id="file" type="file"  onchange="loadFile(event)"/>
         </div>
 
-        <div class="datosMiPerfil">
-            
-                <label for="nombreMiPerfil">Nombre Completo: </label> <span id="nombreMiPerfilOutput" ><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Mi nombre</span>
+            <div class="tramoMiPerfil">
+                
+                <label for="nombreMiPerfil">Nombre Completo</label> <span id="nombreMiPerfilOutput" ><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Mi nombre</span>
                 <input type="text" name="name" id="nombreMiPerfil" placeholder="Nombre Apellido(s)" style="display: none;" >     
 
-                <label for="identificacionMiPerfil">ID: </label> <span id="identificacionMiPerfilOutput"><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;1-2345-6789</span>
+                <label for="identificacionMiPerfil">ID</label> <span id="identificacionMiPerfilOutput"><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;1-2345-6789</span>
                 <input type="text" name="name" id="identificacionMiPerfil" placeholder="1-2345-6789" style="display: none;">     
 
-                <label for="claveMiPerfil">Contraseña: </label> <span id="claveMiPerfilOutput"><i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;Mi contraseña</span>
+                <label for="NombreTramoMiPerfil">Tramo</label> <span id="NombreTramoMiPerfilOutput"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Mi tramo</span>
+                <input type="text" name="name" id="NombreTramoMiPerfil" placeholder="Mi tramo" style="display: none;">     
+
+                <label for="permisosTramoMiPerfil">Permisos Municipales</label> <span id="permisosTramoMiPerfilOutput" ><i class="fa fa-file-pdf-o" aria-hidden="true"><input type="file" name="name" id="permisosTramoMiPerfil"></i>
+                    <br>Mis permisos municipales</span>
+
+            </div>
+
+            <div class="datosMiPerfil">
+                <br><br>                
+                <label for="claveMiPerfil">Contraseña </label> <span id="claveMiPerfilOutput"><i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;Mi contraseña</span>
                 <input type="password" name="name" id="claveMiPerfil" placeholder="* * * * * * * * *" style="display: none;" required>                
 
-                <label for="telefonoMiPerfil">Teléfono: </label> <span id="telefonoMiPerfilOutput"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Mi teléfono</span>
+                <label for="telefonoMiPerfil">Teléfono </label> <span id="telefonoMiPerfilOutput"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Mi teléfono</span>
                 <input type="text" name="name" id="telefonoMiPerfil" placeholder="####-####" style="display: none;" required>                
 
-                <label for="emailMiPerfil">Correo: </label> <span id="emailMiPerfilOutput"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Mi correo electrónico</span>
-                <input type="text" name="name" id="emailMiPerfil" placeholder="correo@servidor.com" style="display: none;" required>                        
-        
-            <button id="btn-GuardarMiPerfil" onclick="guardarPerfil()" style="display: none;">Guardar perfil</button>
-            <button id="btn-EditarMiPerfil" onclick="editarPerfil()">Editar perfil</button>
-        </div>
+                <label for="emailMiPerfil">Correo </label> <span id="emailMiPerfilOutput"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Mi correo electrónico</span>
+                <input type="text" name="name" id="emailMiPerfil" placeholder="correo@servidor.com" style="display: none;" required>                             
+            
+                <button id="btn-GuardarMiPerfil" onclick="guardarPerfil()" style="display: none;">Guardar perfil</button>
+                <button id="btn-EditarMiPerfil" onclick="editarPerfil()">Editar perfil</button>
+            </div>
     </div>
     
 </section>
-
-
-
 <section id="resultadosBuscador"></section>
     <footer id="footer">
         <div id="somosFooter">
@@ -94,7 +102,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/footerHeaderNav.js"></script>
-    <script src="js/miPerfil-admin.js"></script>    
+    <script src="js/miPerfil-vendedor.js"></script>    
+    <script src="js/miPerfil-vendedor-muni.js"></script>    
     <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
 </body>
 </html>

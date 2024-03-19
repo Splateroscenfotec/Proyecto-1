@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,300;5..1200,400;5..1200,500;5..1200,600;5..1200,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
@@ -10,207 +9,31 @@ html {
     background-color: rgba(237, 242, 194, .01) ;
 }
 
-/* --------------------------------------Inicio código header-------------------------------------- */
-header{
-    height: 140px;
-    width: 100%;
-    position: sticky; 
-    top: 0;
+.navbar p {
+  font-family: Roboto;
+  font-weight: 500;
+  color: #42553F;
 }
-
-#header{
-    background-color: #fff;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-}
-
-#header span{
-    line-height: 5;
-}
-
-    #logo{
-        width: 25%;        
-    }
-    #logo img {
-        width:100%
-    }
-    #logo img:hover{
-        background-color: #fff;
-
-    }
-
-    #buscador{
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;    
-        margin-left: 20px;
-    }
-
-    #buscador input {
-        padding: 5px 5px 5px 10px;
-        width: 80%;
-        height: 25px;
-        background-color: #fdd1a9;
-        border: none;
-    }
-    
-    #buscador button {
-        padding: 5px;
-        font-size: 1.25rem;
-        width: 45px;
-        height: 45px;    
-        border-radius: 5px;
-        background-color: #9cca92;
-        border: none;
-    }
-    
-    #buscador button:hover {
-        background-color: #f7953e;
-        cursor: pointer;
-    }
-    
-#headerLoginComprar{
-    width: 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 30px;    
-}
-#headerLoginComprar a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #617c5c;
-    font-family: Roboto;
-    line-height: 2.5;
-}
-    #login{
-        padding-left: 50px;        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    #login span {
-        font-size: .45rem;
-        font-family: Roboto;
-        line-height: 2.5;
-    }
-    #login i{
-        font-size: 2rem;
-        color: #617c5c
-    }
-    #btn-Comprar{
-        flex-direction: column;
-        font-size: 2.5rem;  
-    }
-
-    a:hover{
-        cursor: pointer;
-    }
-/* --------------------------------------Fin código header --------------------------------------*/
-
-/* --------------------------------------Inicio código nav-------------------------------------- */
-nav{
-    background-color: #9cca92;
-    height: 20px;
-    width: 100%; 
-} 
-
-#nav a {
-    color: #465b4f;  
-    font-size: .65rem;
-    font-family: Roboto;    
-    padding-left: 20px;
-    cursor: none;
-}
-
-
-/*-------------------------------------- Fin código nav-------------------------------------- */
-
-
-/* --------------------------------------Inicio código sección Resultados del Buscador-------------------------------------- */
-#resultadosBuscador {
-    margin: 20px;
-}
-/*-------------------------------------- Fin código sección Resultados del Buscador-------------------------------------- */
-
-
-
-
-/* --------------------------------------Inicio código footer-------------------------------------- */
-
-#footer{
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    background-color: #d5e7ce;
-    }
-#somosFooter{
-    width: 40%;
-    line-height: 1.5;
-}
-#footer h1{
-    font-family: Playfair;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    color: #617c5c;
-}
-#footer p{
-    font-family: Roboto;
-    font-size: .75rem;
-    color: #465b4f;
-}
-
-#footer a{
-    text-decoration: none;
-    color: #465b4f;
-    line-height: 2;
-}
-
-#CopyrightFooter{
-    width: 40%;
-    padding-left: 50px;
-    
-}
-
-#logoFooter{
-    width:50px;
-}
-
-#contactoFooter {
-    width: 20%;
-}
-
-#contactoFooter span{
-    font-size: .5rem;
-}
-
-/* --------------------------------------Fin código footer-------------------------------------- */
-
 
 /* --------------------------------------Inicio código carrusel-------------------------------------- */
 
 .carrusel {
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  
 }
 
 .mySlides img{
-    width: 100%;
+    width: 90%;
+  }    
     
-    
+.mySlides {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.dot {
-  
+.dot {  
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -223,7 +46,6 @@ nav{
   background-color: #d8e269;
 }
 
-
 .carrusel a {
     cursor: pointer;
 }
@@ -233,7 +55,7 @@ nav{
 /* --------------------------------------Inicio código registroLanding-------------------------------------- */
 
 #registroLanding {
-    height: 300px;
+    height: 200px;
     width: 100%;
     display: flex;
   }
