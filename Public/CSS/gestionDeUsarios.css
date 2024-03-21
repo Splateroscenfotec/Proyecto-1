@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+html {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(237, 242, 194, .01) ;
+}
+
+/* --------------------------------------Inicio código header-------------------------------------- */
+header{
+    height: 250px;
+    width: 90%;
+    position: sticky; 
+    top: 0;
+}
+
+#header{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+span{
+    line-height: 325;
+    margin-bottom: 120px;
+    padding-bottom: 180px;
+}
+
+    #logo{
+        width: 25%;        
+    }
+    #logo img {
+        width:100%
+    }
+    #logo img:hover{
+        background-color: #fff;
+    }
+
+
+    .buscador {
+        width: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;    
+        margin-left: 20px;
+      }
+      
+      .buscador input {
+        width: 80%;
+        background-color: #fdd1a9;
+        border-right: none;
+        padding: 5px;
+        height: 20px;
+        border-radius: 5px 0 0 5px;
+        /* outline: none; */
+        border: solid 3px  #fdd1a9;;
+        color: #42553F;
+      }
+       
+      
+      .buscador button {
+        width: 40px;
+        height: 36px;
+        border: 1px solid #9cca92;
+        background-color: #9cca92;
+        text-align: center;
+        color: #42553F;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .buscador button:hover {
+        background-color: #f7953e;
+        border: 1px solid #f7953e;
+        cursor: pointer;
+      } 
+    
+#headerLoginComprar{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;    
+}
+#headerLoginComprar a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #617c5c;
+    font-family: Roboto;
+    line-height: 2.5;
+}
+    #login{
+        padding-left: 50px;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #login span {
+        font-size: .45rem;
+        font-family: Roboto;
+        line-height: 2.5;
+    }
+    #login i{
+        font-size: 2rem;
+        color: #617c5c
+    }
+    #btn-Comprar{
+        flex-direction: column;
+        font-size: 2.5rem;  
+    }
+
+    a:hover{
+        cursor: pointer;
+        font-weight: 700;
+    }
+/* --------------------------------------Fin código header --------------------------------------*/
+
+/* --------------------------------------Inicio código nav-------------------------------------- */
+
+.navbar{
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    background: rgb(156,202,146);
+    background: linear-gradient(90deg, rgba(156,202,146,1) 65%, rgba(255,255,255,0) 90%);
+    height: 5px;
+    width: 100%;  
+    padding: 19px;
+} 
+
+.navbar a{
+    padding: 10px;
+    color: #1E2822;  
+    font-size: 1rem;
+    font-family: Roboto;    
+    font-weight: 500;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #d5e7ce;
+    color: #42553F;
+    padding-top: 15px;
+    padding-bottom: 15x;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+/*-------------------------------------- Fin código nav-------------------------------------- */
+
+
+/* --------------------------------------Inicio código sección Resultados del Buscador-------------------------------------- */
+#resultadosBuscador {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+/*-------------------------------------- Fin código sección Resultados del Buscador-------------------------------------- */
+
+section h1{
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 2rem;
+    font-family: Roboto;
+    font-weight: 900;
+    color: #617c5c;
+    margin-left: 40px;
+  }
+  p{
+    font-size: 1rem;
+    font-family: Roboto;
+    color: #42553F;
+    font-weight: 300;
+  }
+  
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+form{
+    padding: 10px;
+}
+
+#organizadorDeDivs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#UsuarioSeleccionado{
+    padding: 3px;
+    margin-left: 60px;
+    width: 400px;
+
+}
+#usuariobuscador input {
+    padding: 5px 5px 5px 10px;
+    width: 80%;
+    height: 25px;
+    background-color: #fdd1a9;
+    margin-bottom: 50px;
+}
+
+#usuariobuscador button {
+    padding: 5px;
+    font-size: 1.25rem;
+    width: 45px;
+    height: 38px;    
+    border-radius: 5px;
+    background-color: #9cca92;
+    border: none;
+}
+
+#usuariobuscador button:hover {
+    background-color: #f7953e;
+    cursor: pointer;
+}
+#seleccionadorUsuario{
+    display: flex;
+    height: 360px;
+    width: 1000px;
+    padding: 1px;
+    margin-left:250px;
+    background-color: #fdd1a9;
+}
+#fotoUsuario{
+    height: 330px;
+    width: 350px;
+    padding: 15px;
+}
+#contenedorImagen{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 100%;
+    justify-content: center;
+}
+#contenedorImagen img{
+    width: 100%;
+    height: auto;
+}
+
+#adjuntarFoto{
+    color: #42553F;
+    background-color: #d5e7ce;
+    margin-bottom: 15px;
+}
+#adjuntarFoto:hover {
+    background-color: #d8e269;
+    color: #1E2822;
+    cursor: pointer;
+  }
+
+#fotoMiPerfilOutput{
+    height: 200px;
+    padding: 1px;
+    border-radius: 20%
+}
+#datosDeUsuario button{
+    display: flex;
+
+}
+#datosDeUsuario li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center  ;
+    margin-top: 25px;
+}
+.botones{
+    border-radius: 5px;
+    color: #42553F;
+    background-color: #f7953e;
+    font-size: .9rem;
+    font-weight: 400;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    left: 350px;
+    bottom: 100px;
+
+  }
+.botones:hover {
+    background-color: #d8e269;
+    color: #1E2822;
+    cursor: pointer;
+  }
+
+
+
+/* --------------------------------------Inicio código footer-------------------------------------- */
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+    background-color: #d5e7ce;
+    }
+#somosFooter{
+    width: 40%;
+    line-height: 1.5;
+    /* padding: 65px */
+}
+#footer h1{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #617c5c;
+}
+#footer p{
+    font-family: Roboto;
+    font-size: .75rem;
+    color: #42553F;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #465b4f;
+    line-height: 2;
+}
+
+#CopyrightFooter{
+    width: 40%;
+    padding-left: 50px;
+    
+}
+
+#logoFooter{
+    width:50px;
+}
+
+#contactoFooter {
+    width: 20%;
+}
+
+#contactoFooter span{
+    font-size: .5rem;
+}
+
+/* --------------------------------------Fin código footer-------------------------------------- */
+
