@@ -1,14 +1,14 @@
 .iniciosesion {
     width: 493px;
     height: 600px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 10px auto;
+    padding: 40px;
     justify-content: center;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: #000;
     border: 1px solid #9C8585; /* Añadir borde */
-    margin-top: 80px; /* Añadimos un margen superior para separar la caja del header */
+    margin-top:10px; /* Añadimos un margen superior para separar la caja del header */
     margin-bottom: 20px;
 }
 
@@ -63,7 +63,7 @@ h2 {
     height: 35px;
     font-size: 15px;
     background-color: #F7953E;
-    color: #fff;
+    color: #000;
     border: none;
     margin-right: 140px;
     cursor: pointer;
@@ -78,8 +78,7 @@ h2 {
 }
 
 .separador {
-    height: 20px;
-    
+    height: 50px;
 }
 
 
@@ -99,7 +98,6 @@ h2 {
     float: right; /* Alineación a la derecha */
     text-align: right; /* Alineación del texto a la derecha dentro de la div */
     margin-top: -40px; /* Espacio entre los botones y el texto superior */
-    margin-right: 30px;
 }
 
 
@@ -111,7 +109,7 @@ h2 {
     font-size: 18px;
     cursor: pointer;
     background-color: #93C4A9;
-    color: #fff;
+    color: #000;
     border: none;
     
 }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>agronline - Registro</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/footerHeaderNav.css">
+    <link rel="stylesheet" href="css/indexagronline.css">    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="CSS/registroCuenta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="icon" href="favicon.png">        
+</head>
+
+<body>
+    <header>     
+        <div id="header">
+            <div id="logo"><a href="indexagronline.html"><img src="img/logo.png" alt="logoAgronline"></a></div>
+    
+            <div class="buscador">
+                <input type="text"  placeholder="Buscar..." id="inputBuscador">
+                <button type="submit" id="btn-Buscador"><i class="fa fa-search"></i></button>
+             </div>
+    
+            <div id="headerLoginComprar">
+                <div id="login"><a><i class="fa fa-user" aria-hidden="true"></i><span>Iniciar sesión</span></a></div>
+                <div id="btn-Comprar"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>        
+            </div>
+            <br><span>&nbsp;</span>
+        </div>
+    
+        <nav class="navbar">
+            <p>Bienvenidos a la feria virtual</p>
+        </nav>
+    
+    </header>
+    
+    <section id="resultadosBuscador"></section>
+
+    <div class="tabs">
+        <button class="tablink" onclick="openTab('Vendedor')">Vendedor</button>
+        <button class="tablink" onclick="openTab('Comprador')">Comprador</button>
+    </div>
+    
+    <section class="registro">
+        <br>
+        <div class="contenedor">
+            <h2>Registro</h2>
+            <form id="registro-form">
+                <div id="Vendedor" class="tabcontent">
+                    <div class="campo">
+                        <label for="numero-empresa">Número de Empresa</label>
+                        <input type="text" id="numero-empresa" name="numero-empresa">
+                    </div>
+                    <!-- Otros campos para Vendedor -->
+                </div>
+    
+                <div id="Comprador" class="tabcontent" style="display:none;">
+                    <div class="campo">
+                        <label for="cedula">Cédula</label>
+                        <input type="text" id="cedula" name="cedula">
+                    </div>
+                    <!-- Otros campos para Comprador -->
+                </div>
+    
+                <div class="campo">
+                    <label for="tipo-identificacion">Tipo de Identificación</label>
+                    <select name="tipo-identificacion" id="tipo-identificacion">
+                        <option value="cedula">Cédula</option>
+                        <option value="pasaporte">Pasaporte</option>
+                        <option value="dimex">DIMEX</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="identificacion">Número de Identificación</label>
+                    <input type="text" id="identificacion" name="identificacion">
+                </div>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div class="campo">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </div>
+                <div class="campo">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="campo">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena">
+                </div>
+                <div class="campo">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Aceptar términos y condiciones</label>
+                </div>
+                <button class="boton-registro">Registrarse</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div id="somosFooter">
+            <h1>Quiénes somos</h1>
+            <p>Somos una empresa costarricense comprometida con la  promoción y venta de productos agropecuarios nacionales de la más alta calidad. Nuestro objetivo es fomentar el consumo de productos locales, apoyando a los agricultores de nuestra región.</p>
+        </div>
+        <div id="CopyrightFooter">
+            
+        </div>
+        <div id="contactoFooter">
+            <h1>Contáctenos</h1>
+            <p><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i>@agronline</a> </p>
+            <p><a href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-square"></i>@agronline</a></p>
+            <p><a href="https://wa.me/50683970896" target="_blank"><i class="fab fa-whatsapp-square"></i></a> 8000-0000</p>  
+            <img id="logoFooter" src="img/logoVertical.png" alt="logoAgronline" >
+            <br>
+            <p><span> Copyright 2024</span></p>
+        </div>
+    </footer>
+    
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/footerHeaderNav.js"></script>
+    <script src="js/indexagronline.js"></script>
+    <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin
