@@ -204,8 +204,10 @@ form{
     padding: 3px;
     margin-left: 60px;
     width: 400px;
-
+    font-family: Roboto;
 }
+
+
 #usuariobuscador input {
     padding: 5px 5px 5px 10px;
     width: 80%;
@@ -231,7 +233,7 @@ form{
 #seleccionadorUsuario{
     display: flex;
     height: 360px;
-    width: 1000px;
+    width: 1100px;
     padding: 1px;
     margin-left:250px;
     background-color: #fdd1a9;
@@ -301,6 +303,17 @@ form{
     color: #1E2822;
     cursor: pointer;
   }
+#ubicacionBotones{
+    margin-top: 170px;
+}
+#datosDeUsuario h2, #datosDeUsuario  li{
+    text-align: center;
+    font-family: Roboto;
+}
+
+#UsuarioSeleccionado span{
+    font-size: 1.5rem;
+}
 
 
 
