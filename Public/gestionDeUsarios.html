@@ -30,7 +30,6 @@
 
     <nav class="navbar">
         <a href="indexagronline.html" target="_blank">Inicio &nbsp;</a>
-        <a>Inicio &nbsp;</a>
         <a>Usuarios &nbsp;</a>
         <a>Catalogos &nbsp;</a>
         <a>Reportes &nbsp;</a>
@@ -50,20 +49,12 @@
             <div id="organizadorDeDivs">        
                 <div id="UsuarioSeleccionado"> 
                     
-                    <p>Solicitud de registro</p><br>
+                    <h2 ><span>Solicitudes pendientes</span></h2><br>
                     <ul>
-                        <li><a href="">Compradores</a></li>
                         <li><a href="">Vendedores</a></li>
-                        <li><a href="">Administrador</a></li>
                     </ul><br>
 
-                    <p>Usuarios registrados (compradores y vendedores)</p><br>
-
-                    <ul>
-                        <li><a href="">Agregar</a></li>
-                        <li><a href="">Editar</a></li>
-                        <li><a href="">Eliminar</a></li>
-                    </ul><br>
+                    <h2><span>Usuarios registrados (compradores y vendedores)</span></h2><br>
  
                     
                     <div id="usuariobuscador">
@@ -76,8 +67,10 @@
                         <label for="opcion1">Juan Pedro Ruiz Gonzales(Comprador)</label><br>
                         <input type="radio" id="opcion2" name="opciones" value="opcion2">
                         <label for="opcion2">Juan Pedro Ruiz Gonzales(Vendedor)</label><br>
-                    </form>
+                    </form><br><br>
 
+                    
+                        <h2><span><a href="">Agregar nuevo usuario</span></h2>
                 </div>
 
                 <div id="seleccionadorUsuario">
@@ -91,20 +84,22 @@
                     </div>
                     <div id="datosDeUsuario">
                         <ul class="iconContainer">
-                            <li><i class="fa fa-user"></i> Nombre de usuario</li>
-                        
-                            <li><i class="fa fa-phone"></i> Telefono</li>
-                           
-                            <li><i class="fa fa-envelope-o"></i> Email</li>
+                            <h2>Nombre Completo:</h2>
+                            <li><i class="fa fa-user"></i> Juan Pedro Ruiz Gonzales</li><br>
+                            <h2>ID:</h2>
+                            <li><i class="fa fa-id-card-o"></i> 1-2345-6789</li><br>
+                            <h2>Teléfono:</h2>
+                            <li><i class="fa fa-phone"></i> 8884-2521</li><br>
+                            <h2>Email:</h2>
+                            <li><i class="fa fa-envelope-o"></i> Jpegro@gmail.com</li>
                             
                         </ul>
-                        <button class="botones" onclick="BorrarPerfil()">Borrar</button>
-                        <button class="botones" onclick="editarPerfil()">Editar</button>
-                        <button class="botones" onclick="editarPerfil()" id="btn-Guardar">Guardar cambios</button>
-                        
-                        
-
                     </div>
+                        <div id="ubicacionBotones">
+                            <button class="botones" onclick="BorrarPerfil()">Borrar</button>
+                            <button class="botones" onclick="editarPerfil()">Editar</button>
+                            <button class="botones" onclick="editarPerfil()" id="btn-Guardar">Guardar cambios</button>
+                        </div>
                 </div>
             </div>
         </div>

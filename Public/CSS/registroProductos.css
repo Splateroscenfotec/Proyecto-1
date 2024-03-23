@@ -13,10 +13,11 @@ html {
     background-color: rgba(237, 242, 194, .01) ;
 }
 
+
 /* --------------------------------------Inicio código header-------------------------------------- */
 header{
-    height: 140px;
-    width: 100%;
+    height: 250px;
+    width: 90%;
     position: sticky; 
     top: 0;
 }
@@ -28,8 +29,10 @@ header{
     flex-direction: row;
 }
 
-#header span{
-    line-height: 5;
+span{
+    line-height: 325;
+    margin-bottom: 120px;
+    padding-bottom: 180px;
 }
 
     #logo{
@@ -40,40 +43,49 @@ header{
     }
     #logo img:hover{
         background-color: #fff;
-
     }
 
-    #buscador{
+
+    .buscador {
         width: 50%;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 10px;    
         margin-left: 20px;
-    }
-
-    #buscador input {
-        padding: 5px 5px 5px 10px;
+      }
+      
+      .buscador input {
         width: 80%;
-        height: 25px;
         background-color: #fdd1a9;
-        border: none;
-    }
-    
-    #buscador button {
+        border-right: none;
         padding: 5px;
-        font-size: 1.25rem;
-        width: 45px;
-        height: 45px;    
-        border-radius: 5px;
+        height: 20px;
+        border-radius: 5px 0 0 5px;
+        /* outline: none; */
+        border: solid 3px  #fdd1a9;;
+        color: #42553F;
+      }
+       
+      
+      .buscador button {
+        width: 40px;
+        height: 36px;
+        border: 1px solid #9cca92;
         background-color: #9cca92;
-        border: none;
-    }
-    
-    #buscador button:hover {
-        background-color: #f7953e;
+        text-align: center;
+        color: #42553F;
+        border-radius: 0 5px 5px 0;
         cursor: pointer;
-    }
+        font-size: 20px;
+      }
+
+      .buscador button:hover {
+        background-color: #f7953e;
+        border: 1px solid #f7953e;
+        cursor: pointer;
+      } 
     
 #headerLoginComprar{
     width: 15%;
@@ -118,52 +130,72 @@ header{
 /* --------------------------------------Fin código header --------------------------------------*/
 
 /* --------------------------------------Inicio código nav-------------------------------------- */
-nav{
-    background-color: #9cca92;
-    height: 20px;
-    width: 100%; 
+.navbar{
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    background: rgb(156,202,146);
+    background: linear-gradient(90deg, rgba(156,202,146,1) 65%, rgba(255,255,255,0) 90%);
+    height: 5px;
+    width: 100%;  
+    padding: 19px;
+    
 } 
 
-#nav a {
+.navbar a{
+    padding: 10px;
     color: #1E2822;  
-    font-size: .65rem;
+    font-size: 1rem;
     font-family: Roboto;    
+    font-weight: 500;
     padding-left: 20px;
+    text-decoration: none;
 }
 
-#nav a:hover{
+.navbar a:hover{
     background-color: #d5e7ce;
-    padding-top: 4px;
-    padding-bottom: 3px;
+    color: #42553F;
+    padding-top: 15px;
+    padding-bottom: 15x;
     cursor: pointer;
+    font-weight: 900;
 }
 /*-------------------------------------- Fin código nav-------------------------------------- */
 
 
 /* --------------------------------------Inicio código sección Resultados del Buscador-------------------------------------- */
 #resultadosBuscador {
-    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
 }
 /*-------------------------------------- Fin código sección Resultados del Buscador-------------------------------------- */
 
 /* ------------------------------------ Inicio de Registro de productos -------------------------------------*/
+
 #registro h1{
-    padding-top: 30px;
+    margin-top: 1px;
+    padding-top: 10px;
     padding-left: 20px;
     font-size: 2rem;
-    font-family: Playfair;
-    font-weight: 500;
+    font-family: Roboto;
+    font-weight: 900;
     color: #617c5c;
-}
+  }
+
 #alinearColumnas{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
 }
 #informacionDeProductos{
     display: flex;
     flex-direction: column;
     width: 250px;
     margin-left: 100px;
+    padding: 1px;
 
 }
 
@@ -216,6 +248,13 @@ background-color: #d8e269;
 color: #1E2822;
 cursor: pointer;
 }
+label{
+        line-height: 2.5;
+    font-family: Roboto;
+    color: #42553F;
+    font-size: 1.075rem;
+    font-weight: 300;
+   } 
 
 
 
@@ -228,15 +267,17 @@ cursor: pointer;
 #footer{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 70px;
     background-color: #d5e7ce;
     }
 #somosFooter{
     width: 40%;
     line-height: 1.5;
+    /* padding: 65px */
 }
 #footer h1{
-    font-family: Playfair;
+    font-family: Roboto;
+    font-weight: 500;
     font-size: 1.25rem;
     line-height: 2rem;
     color: #617c5c;
@@ -244,7 +285,7 @@ cursor: pointer;
 #footer p{
     font-family: Roboto;
     font-size: .75rem;
-    color: #465b4f;
+    color: #42553F;
 }
 
 #footer a{
@@ -270,6 +311,5 @@ cursor: pointer;
 #contactoFooter span{
     font-size: .5rem;
 }
-
 /* --------------------------------------Fin código footer-------------------------------------- */
 
