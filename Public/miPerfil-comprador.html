@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>agronline - Mi Perfil</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/footerHeaderNav.css">
+    <link rel="stylesheet" href="CSS/miPerfil-admin.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="icon" href="favicon.png">        
+</head>
+
+<body>
+    <header>     
+        <div id="header">
+            <div id="logo"><a href="indexagronline.html"><img src="img/logo.png" alt="logoAgronline" ></div></a>
+    
+            <div class="buscador">
+                <input type="text"  placeholder="Buscar..." id="inputBuscador">
+                <button type="submit" id="btn-Buscador"><i class="fa fa-search"></i></button>
+             </div>
+    
+            <div id="headerLoginComprar">
+                <div id="login"><a><i class="fa fa-user" aria-hidden="true"></i><span>Iniciar sesión</span></div></a>
+                <div id="btn-Comprar"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>        
+            </div>
+            <br><span>&nbsp;</span>
+        </div>
+    
+        <nav class="navbar">
+            <a href="indexagronline.html" target="_blank">Inicio &nbsp;</a>
+            <a>Productos</a>
+            <a>Compras</a>
+            <a>Reportes</a>
+        </nav>
+    
+        </header>
+    
+
+<section id="miPerfil">
+    <h1>Mi perfil</h1>
+    <div class="miPerfil">        
+        <div class="fotoMiPerfil">
+            <img src="img/profile.webp" id="fotoMiPerfilOutput"  />                
+            <input id="file" type="file"  onchange="loadFile(event)"/>
+        </div>
+
+        <div class="datosMiPerfil">
+            
+                <label for="nombreMiPerfil">Nombre Completo: </label> <span id="nombreMiPerfilOutput" ><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Mi nombre</span>
+                <input type="text" name="name" id="nombreMiPerfil" placeholder="Nombre Apellido(s)" style="display: none;" >     
+
+                <label for="identificacionMiPerfil">ID: </label> <span id="identificacionMiPerfilOutput"><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;1-2345-6789</span>
+                <input type="text" name="name" id="identificacionMiPerfil" placeholder="1-2345-6789" style="display: none;">     
+
+                <label for="claveMiPerfil">Contraseña: </label> <span id="claveMiPerfilOutput"><i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;Mi contraseña</span>
+                <input type="password" name="name" id="claveMiPerfil" placeholder="* * * * * * * * *" style="display: none;" required>                
+
+                <label for="telefonoMiPerfil">Teléfono: </label> <span id="telefonoMiPerfilOutput"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Mi teléfono</span>
+                <input type="text" name="name" id="telefonoMiPerfil" placeholder="####-####" style="display: none;" required>                
+
+                <label for="emailMiPerfil">Correo: </label> <span id="emailMiPerfilOutput"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Mi correo electrónico</span>
+                <input type="text" name="name" id="emailMiPerfil" placeholder="correo@servidor.com" style="display: none;" required>                        
+        
+            <button id="btn-GuardarMiPerfil" onclick="guardarPerfil()" style="display: none;">Guardar perfil</button>
+            <button id="btn-EditarMiPerfil" onclick="editarPerfil()">Editar perfil</button>
+        </div>
+    </div>
+    
+</section>
+
+
+
+<section id="resultadosBuscador"></section>
+    <footer id="footer">
+        <div id="somosFooter">
+            <h1>Quiénes somos</h1>
+            <p>Somos una empresa costarricense comprometida con la  promoción y venta de productos agropecuarios nacionales de la más alta calidad. Nuestro objetivo es fomentar el consumo de productos locales, apoyando a los agricultores de nuestra región.</p>
+        </div>
+        <div id="CopyrightFooter">
+            
+        </div>
+        <div id="contactoFooter">
+            <h1>Contáctenos</h1>
+            <p><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i>@agronline</a> </p>
+            <p><a href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-square"></i>@agronline</a></p>
+            <p><a href="https://wa.me/50683970896" target="_blank"><i class="fab fa-whatsapp-square"></i></a> 8000-0000</p>  
+            <img id="logoFooter" src="img/logoVertical.png" alt="logoAgronline" >
+            <br>
+            <p><span> Copyright 2024</span></p>      
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/footerHeaderNav.js"></script>
+    <script src="js/miPerfil-admin.js"></script>    
+    <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
+</body>
+</html>
