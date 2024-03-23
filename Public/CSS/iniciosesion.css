@@ -59,6 +59,7 @@ h2 {
 
 
 .boton-iniciar {
+    border-radius: 5px;
     width: 136px;
     height: 35px;
     font-size: 15px;
@@ -102,6 +103,7 @@ h2 {
 
 
 .opciones-registro button {
+    border-radius: 5px;
     display: block; 
     width: 138px;
     height: 34px;

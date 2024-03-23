@@ -1,7 +1,6 @@
 const nombreP = document.querySelector("#nombre")
 const descripcionP = document.querySelector("#descripcion")
 const inventarioP = document.querySelector("#inventario")
-const categoriaP = document.querySelector("#categoria")
 const precioP = document.querySelector("#precio")
 const cantidadP = document.querySelector("#cantidad")
 const impuestosP = document.querySelector("#impuestos")
@@ -51,32 +50,9 @@ function validarDescripcion(){
     }
     return error;
 }
-/*-----------------------------Esta funcion verifica el inventario -----------------------*/
-function validarInventario() {
-    let error = false;
-    let inventarioDisponible = inventarioP.value;
-    let expression = /^[0-9]+$/;
-    if(expression.test(inventarioDisponible)==false){
-        inventarioP.classList.add("error");
-        error=true;
-    }else{
-        inventarioP.classList.remove("error");
-    }
-    return error;
-}
-/*-----------------------------Esta funcion verifica la categoría-----------------------*/
-function validarCategoria() {
-    let error = false;
-    let categoriasDisponibles = categoriaP.value;
-    let expression = /^[a-zA-ZáéíóúñÑü]+$/;
-    if (expression.test(categoriasDisponibles)==false) {
-        categoriaP.classList.add("error");
-        error=true;
-    } else {
-        categoriaP.classList.remove("error");
-    }
-    return error; 
-}
+
+
+
 /*-----------------------------Esta funcion verifica el precio -----------------------*/
 function validarPrecio() {
     let error = false;
@@ -113,8 +89,6 @@ function principal() {
     let error_campos_vacios= ValidarCamposVacios();
     let errorEnNombre = validarnombre();
     let errorEnDescripcion = validarDescripcion();
-    let errorEnInventario = validarInventario();
-    let errorEnCategorias = validarCategoria();
     let errorEnPrecio = validarPrecio();
     let errorEnImpuestos = validarImpuesto();
 
@@ -142,22 +116,6 @@ function principal() {
             confirmButtonText:"Entendido!"
         });
     }
-    else if (errorEnInventario) {
-        Swal.fire({
-            title: "En el inventario",
-            text: "Debe usar unicamente números",
-            icon: "warning",
-            confirmButtonText:"Entendido!"
-        });        
-    }
-    else if (errorEnCategorias) {
-        Swal.fire({
-            title: "En el categorías",
-            text: "Debe usar unicamente letras",
-            icon: "warning",
-            confirmButtonText:"Entendido!"
-        });        
-    }
     else if (errorEnPrecio) {
         Swal.fire({
             title: "En el precio",
@@ -166,7 +124,6 @@ function principal() {
             confirmButtonText:"Entendido!"
         });         
     }
-    
     else if (errorEnImpuestos) {
         Swal.fire({
             title: "En los impuestos",

@@ -5,7 +5,7 @@
     <title>agronline - Inicio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/registroProductos.css">
+    <link rel="stylesheet" href="CSS/registroProductos.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="icon" href="favicon.png">        
@@ -15,27 +15,35 @@
     <header>     
     <div id="header">
         <div id="logo"><a href="indexagronline.html"><img src="img/logo.png" alt="logoAgronline" ></div></a>
-        
-        <div id="buscador">
-            <input type="text" placeholder="Buscar..." id="inputBuscador">
-            <button id="btn-Buscador"><i class="fas fa-search"></i></button>
-        </div>
+
+        <div class="buscador">
+            <input type="text"  placeholder="Buscar..." id="inputBuscador">
+            <button type="submit" id="btn-Buscador"><i class="fa fa-search"></i></button>
+         </div>
+
         <div id="headerLoginComprar">
             <div id="login"><a><i class="fa fa-user" aria-hidden="true"></i><span>Iniciar sesión</span></div></a>
             <div id="btn-Comprar"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>        
         </div>
         <br><span>&nbsp;</span>
     </div>
+<<<<<<< HEAD
     <nav id="nav">        
         <a>Inicio &nbsp;</a>
         <a>Inventario &nbsp;</a>
         <a>Reportes &nbsp;</a>
         <a>Reseñas &nbsp;</a>
+=======
+
+    <nav class="navbar">
+        <a href="indexagronline.html" target="_blank">Inicio &nbsp;</a>
+        <a>Usuarios &nbsp;</a>
+        <a>Catálogos &nbsp;</a>
+        <a>Reportes &nbsp;</a>
+>>>>>>> 8083f17fcfd6e9f75b9fce1eb740d705f4443760
     </nav>
+
     </header>
-<section 
-id="resultadosBuscador">   
-</section>
 
 <section id="registro">
     <h1>Registro de productos</h1><br>
@@ -60,22 +68,30 @@ id="resultadosBuscador">
     <label class="infoproducto" for="nombre">Nombre: </label>
     <input class="infoproducto" type="text" id="nombre" required><br>
 
-    <label class="infoproducto" for="descripcion">Descripción:</label>
-    <input class="infoproducto" type="text" id="descripcion" required><br>
+    <!-- <label class="infoproducto" for="descripcion">Descripción:</label>
+    <input class="infoproducto" type="text" id="descripcion" required><br> -->
+    <label for="descripcion">Descripción:</label><br>
+    <textarea cols="50" rows="10"id="descripcion" required></textarea>
 
-    <label class="infoproducto" for="inventario">Inventario disponible</label>
-    <input class="infoproducto" type="text" id="inventario" required><br>
 
-    <label class="infoproducto" for="categoria">Categoria</label>
-    <input class="infoproducto" type="text" id="categoria" required><br>
+    <label for="categories">Categorías:</label>
 
-    <label class="infoproducto" for="precio">Precio Unitario</label>
+    <select name="categories">
+      <option value="Hortalizas">Hortalizas</option>
+      <option value="Hongos">Hongos</option>
+      <option value="Pecuarios y Lácteos">Pecuarios y Lácteos</option>
+      <option value="Abarrotes">Abarrotes</option>
+      <option value="Frutas">Frutas</option>
+      <option value="Raíces y Tubérculos">Raíces y Tubérculos</option>
+    </select><br>
+
+    <label class="infoproducto" for="precio">Precio Unitario ₡:</label>
     <input class="infoproducto" type="text" id="precio" required><br>
 
-    <label class="infoproducto" for="cantidad">Cantidad</label>
+    <label class="infoproducto" for="cantidad">Cantidad:</label>
     <input class="infoproducto" type="number" id="cantidad" required><br>
 
-    <label class="infoproducto" for="impuestos">Impuestos de venta</label>
+    <label class="infoproducto" for="impuestos">Impuestos de venta:</label>
     <input class="infoproducto" type="text" id="impuestos" required><br>
 
     <button type="button" id="botonRegistrar">Registrar</button>
@@ -86,7 +102,7 @@ id="resultadosBuscador">
 </section> 
 
 
-<section>
+<section id="resultadosBuscador"></section>
     <footer id="footer">
         <div id="somosFooter">
             <h1>Quiénes somos</h1>
@@ -104,11 +120,9 @@ id="resultadosBuscador">
             <br>
             <p><span> Copyright 2024</span></p>      
         </div>
-    
     </footer>
-</section>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="javascript/registroProductos.js"></script>
+    <script src="JS/registroProductos.js"></script>
     <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
 </body>
 </html>
