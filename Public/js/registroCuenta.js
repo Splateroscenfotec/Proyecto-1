@@ -64,7 +64,7 @@ function ValidarIdentificacion() {
             title: "Formato incorrecto",
             text: "El número de identificación debe tener 9 dígitos",
             icon: "warning",
-            confirmButtonText: "Entendido!"
+            confirmButtonText: "Ok"
         });
         error = true;
     }
@@ -130,7 +130,7 @@ function ValidarContrasena() {
             title: "Contraseña incorrecta",
             text: "La contraseña debe tener máximo 8 caracteres, al menos 1 letra y 1 número",
             icon: "warning",
-            confirmButtonText: "Entendido!"
+            confirmButtonText: "Ok"
         });
         error = true;
     }
@@ -159,49 +159,49 @@ function principal() {
             title: "Campos vacíos",
             text: "Debe completar todos los campos",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"Ok"
           });
     }else if(error_identificacion){
         Swal.fire({
             title: "Identificación incorrecta",
             text: "Favor revisar la identificación, debe tener 9 dígitos",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"Ok"
           });
     }else if(error_nombre){
         Swal.fire({
             title: "Nombre incorrecto",
             text: "Favor revisar el nombre, solo se aceptan letras",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"Ok"
           });
     }else if(error_apellidos){
             Swal.fire({
                 title: "Apellidos incorrecto",
                 text: "Favor revisar el apellido, solo se aceptan letras",
                 icon: "warning",
-                confirmButtonText:"Entendido!"
+                confirmButtonText:"Ok"
               });
     }else if(error_email){
         Swal.fire({
             title: "Correo incorrecto",
             text: "Favor ingresar un email válido",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"Ok"
           });
     }else if(error_telefono){
         Swal.fire({
             title: "Teléfono incorrecto",
             text: "El teléfono debe cumplir con el formato:2222-2222",
             icon: "warning",
-            confirmButtonText:"Entendido!"
+            confirmButtonText:"Ok"
           });
     }else if(error_contrasena){
             Swal.fire({
                 title: "Contraseña incorrecta",
                 text: "Contraseña incorrecta",
                 icon: "warning",
-                confirmButtonText:"Entendido!"
+                confirmButtonText:"Ok"
               });
     }
     else{

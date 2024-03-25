@@ -14,24 +14,12 @@ body {
     border-radius: 10px;
 }
 
-.comprador {
-    background-color: #93C4A9;
-    border-radius: 10px;
-}
-
-.vendedor{
-    background-color: #D1E4D8;
-    border-radius: 10px;
-}
-
-
 .menu {
     display: flex;
     justify-content: center;
     padding: 10px 40px; 
     
 }
-
 
 .menu p {
     margin: 5px;
@@ -49,13 +37,13 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    width: 100%;
 }
 
 .tabcontent {
     border-top: 2px solid  #FFC657; 
     display: none;
     padding: 35px;
-    border: 1px solid #ccc;
     margin-bottom: 30px;
 }
 
@@ -103,7 +91,7 @@ button {
     width: 45%;
   }
 button:hover {
-    background-color:#d8e269;
+    background-color: #d8e269;
     color: #1E2822;
     cursor: pointer;
   }

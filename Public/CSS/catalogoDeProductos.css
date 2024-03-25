@@ -20,7 +20,12 @@ h1{
 h2{
     font-size: 2rem;
     font-family: Roboto;
+<<<<<<< HEAD
+    font-weight: 900;
+    color: #617c5c;
+=======
     color: #42553f;
+>>>>>>> 8083f17fcfd6e9f75b9fce1eb740d705f4443760
 }
 
 p{
@@ -231,9 +236,12 @@ span{
     margin-top: 70px;
     text-align: justify;
 }
+<<<<<<< HEAD
+=======
 #opcionesCategorias label{
     font-family: Roboto;
 }
+>>>>>>> 8083f17fcfd6e9f75b9fce1eb740d705f4443760
 
 #buscadorDeProductos{
     margin-top: 10px;
@@ -285,9 +293,12 @@ span{
         background-color: #d8e269;
         
 }
+<<<<<<< HEAD
+=======
 #tablefont{
     font-family: Roboto;
 }
+>>>>>>> 8083f17fcfd6e9f75b9fce1eb740d705f4443760
 /* --------------------------------------Inicio código footer-------------------------------------- */
 
 #footer{
