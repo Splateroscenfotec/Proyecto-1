@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Carrito de Compras</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Public/CSS/footerHeaderNav.css">
+    <link rel="stylesheet" href="/Public/CSS/indexagronline.css">  
+    <link rel="stylesheet" href="/Public/CSS/paginaCarrito.css">  
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link rel="icon" href="favicon.png">        
+</head>
+
+<body>
+    <header>     
+        <div id="header">
+            <div id="logo"><a href="indexagronline.html"><img src="img/logo.png" alt="logoAgronline" ></div></a>
+    
+            <div class="buscador">
+                <input type="text"  placeholder="Buscar..." id="inputBuscador">
+                <button type="submit" id="btn-Buscador"><i class="fa fa-search"></i></button>
+             </div>
+    
+            <div id="headerLoginComprar">
+                <div id="login"><a><i class="fa fa-user" aria-hidden="true"></i><span>Iniciar sesión</span></div></a>
+                <div id="btn-Comprar"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>        
+            </div>
+            <br><span>&nbsp;</span>
+        </div>
+    
+        <nav class="navbar">        
+            <a>Inicio</a>
+            <a>Producto</a>
+            <a>Compras</a>
+            <a>Reportes</a>
+        </nav>
+    
+    </header>
+    <section class="sectionCarrito">
+      <section>
+          <h1 class="txtCarritoCompras">Carrito de Compras</h1>
+      </section>
+      <section class="txtProductos">
+      <H2>Productos agregados</H2>
+      </section>
+    <section class="carritoTotal">
+      <section class="carritoProductos">
+        <ul>
+            <li>
+              <img src="imagenes/tomates.jpg" alt="Tomates">
+              <h3>Tomates</h3>
+              <p class="txtCantidad">Cantidad:<p class="numeroCantidad">2</p></p>
+              <p class="txtprecio">Precio por kg: <p class="precioProducto">₡700.0</p></p>
+              <p>Subtotal: ₡1.400</p>
+            </li>
+            <li>
+              <img src="imagenes/chile.jpg" alt="Chile">
+              <h3>Chile</h3>
+              <p class="txtCantidad">Cantidad:<p class="numeroCantidad" >3</p></p>
+              <p class="txtprecio">Precio por kg: <p class="precioProducto">₡200.0</p></p>
+              <p>Subtotal: ₡600</p>
+            </li>
+            <li>
+              <img src="imagenes/chayotes.jpg" alt="Chayotes">
+              <h3>Chayotes</h3>
+              <p class="txtCantidad">Cantidad:<p class="numeroCantidad">10</p></p>
+              <p class="txtprecio">Precio por ud: <p class="precioProducto">₡200.0</p></p>
+              <p>Subtotal: ₡2.000</p>
+            </li>
+            <li>
+              <img src="imagenes/chayotes.jpg" alt="Chayotes">
+              <h3>Chayotes</h3>
+              <p class="txtCantidad">Cantidad:<p class="numeroCantidad">10</p></p>
+              <p class="txtprecio">Precio por ud: <p class="precioProducto">₡200.0</p></p>
+              <p>Subtotal: ₡2.000</p>
+            </li>
+            <li>
+              <img src="imagenes/chayotes.jpg" alt="Chayotes">
+              <h3>Chayotes</h3>
+              <p class="txtCantidad">Cantidad:<p class="numeroCantidad">10</p></p>
+              <p class="txtprecio">Precio por ud: <p class="precioProducto">₡200.0</p></p>
+              <p>Subtotal: ₡2.000</p>
+            </li>
+          </ul>
+        </section>
+        <div class="total">
+          <h2>Total a pagar</h2>
+          <p>₡3.800</p>
+          <div class="linkSeguirPagar">
+            <a href="#">Seguir comprando</a>
+            <a href="#">Proceder al pago</a>
+          </div>
+        </div>      
+    </section>
+        <section class="pago">
+          <div>
+            <h2>Registrar método de pago</h2>
+          </div>
+          <div class="formularioTarjeta">
+            <div class="iconosTarjetas">
+              <img src="/Public/img/icons8-visa-48.png" alt="VISA">
+              <img src="/Public/img/mastercard.png" alt="MasterCard">
+              <img src="/Public/img/jcb.png" alt="JCB">
+              <img src="/Public/img/american-express.png" alt="AmericanExpress">      
+            </div>
+            <form class="formTarjeta">
+
+              <label for="tarjeta">Número de tarjeta</label>
+              <input type="text" id="tarjeta" name="tarjeta" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" title="Ingrese el número de tarjeta de 16 dígitos" placeholder="1234-5678-9012-3456" required>
+    
+              <label for="expiracion">Expiración</label>
+              <input type="text" id="expiracion" name="expiracion" pattern="[0-1]{0,1}[0-9]{1}/[0-9]{2}" title="Ingrese la fecha de expiración en formato MM/YY" placeholder="MM/YY" require>
+              
+              <label for="seguridad">Seguridad</label>
+              <input type="text" id="seguridad" name="seguridad" title="Ingrese el código de seguridad de 3 dígitos"  placeholder="123" required>
+            </form>
+          </div>
+          <div id="boton_pagar">
+            <button type="button" id="btn-pagar">Pagar</button>
+          </div>
+
+        </section>
+    </section>
+
+    <footer id="footer">
+        <div id="somosFooter">
+            <h1>Quiénes somos</h1>
+            <p>Somos una empresa costarricense comprometida con la  promoción y venta de productos agropecuarios nacionales de la más alta calidad. Nuestro objetivo es fomentar el consumo de productos locales, apoyando a los agricultores de nuestra región.</p>
+        </div>
+        <div id="CopyrightFooter">
+            
+        </div>
+        <div id="contactoFooter">
+            <h1>Contáctenos</h1>
+            <p><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i>@agronline</a> </p>
+            <p><a href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-square"></i>@agronline</a></p>
+            <p><a href="https://wa.me/50683970896" target="_blank"><i class="fab fa-whatsapp-square"></i></a> 8000-0000</p>  
+            <img id="logoFooter" src="img/logoVertical.png" alt="logoAgronline" >
+            <br>
+            <p><span> Copyright 2024</span></p>      
+        </div>
+    </footer>
+    <script src="/Public/js/paginaCarrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
+</body>
+</html>

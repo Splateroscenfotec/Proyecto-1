@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Landing - Productos - Comprador</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Public/CSS/footerHeaderNav.css">
+    <link rel="stylesheet" href="/Public/CSS/landingcomprador.css">
+    <link rel="stylesheet" href="/Public/CSS/paginaProductosTramo.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="icon" href="favicon.png">           
+</head>
+
+<body class="paginaProductos">
+    <header>     
+        <div id="header">
+            <div id="logo"><a href="indexagronline.html"><img src="img/logo.png" alt="logoAgronline" ></div></a>
+    
+            <div class="buscador">
+                <input type="text"  placeholder="Buscar..." id="inputBuscador">
+                <button type="submit" id="btn-Buscador"><i class="fa fa-search"></i></button>
+             </div>
+    
+            <div id="headerLoginComprar">
+                <div id="login"><a><i class="fa fa-user" aria-hidden="true"></i><span>Iniciar sesión</span></div></a>
+                <div id="btn-Comprar"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>        
+            </div>
+            <br><span>&nbsp;</span>
+        </div>
+    
+        <nav class="navbar">        
+            <a>Inicio</a>
+            <a>Producto</a>
+            <a>Compras</a>
+            <a>Reportes</a>
+        </nav>
+    
+    </header>
+
+     <section class="titulosBienvenida">
+        <h1>Bienvenido</h1>
+        <h2>Categorias</h2>
+     </section>
+     
+     <section class="filtros-Categorias">
+        <div class="productoFiltro">
+            <img src="https://img.freepik.com/foto-gratis/ensalada-vegetales_1388-679.jpg?t=st=1710285640~exp=1710289240~hmac=b5c6e84076a4a20fd9c799d3a5def4e72be0c020644d69323f88ec8212cb90c4&w=1380" alt="Hortalizas">
+            <button id="btn-filtrar-hortaliza" data-categoria="hortaliza">Hortalizas</button>
+        </div>
+        <div class="productoFiltro">
+            <img src="https://img.freepik.com/foto-gratis/caja-madera-manzanas-organicas-frescas-sobre-superficie-negra_114579-88799.jpg?t=st=1710363008~exp=1710366608~hmac=01ac47c312c30db535c57c8afa7be7bc494dcca52a928762f55ff4754adf593c&w=1380" alt="Manzana">
+            <button id="btn-filtrar-fruta" data-categoria="fruta">Frutas</button>
+        </div>
+        <div class="productoFiltro">
+            <img src="https://img.freepik.com/foto-gratis/champinones-blancos-organicos-frescos-champinon-vista-superior_114579-8178.jpg?t=st=1710286840~exp=1710290440~hmac=dbc9f3ae470df15d44de04d4d10390e9de3650cf7c10ef6b8f0e0f4aaaee1b21&w=740" alt="Champiñón">
+            <button data-categoria="hongo">Hongos</button>
+        </div>
+        <div class="productoFiltro">
+            <img src="https://img.freepik.com/foto-gratis/carnes-crudas-especias-utensilios-sobre-tabla-cortar-rustica-madera-oscura-ai-generativo_123827-23522.jpg?t=st=1711331359~exp=1711334959~hmac=524a8d8c28302b58c8f0c34faae1cc6d7019b88286c29b53e94c0c315ef526ad&w=996" alt="pecuarios y lacteos">
+            <button data-categoria="pecuario-lacteo">Pecuarios y Lacteos</button>
+        </div>
+        <div class="productoFiltro">
+            <img src="https://img.freepik.com/foto-gratis/frijoles-rojos-arroz-guisantes-tazones-coloridos_114579-6334.jpg?t=st=1711331510~exp=1711335110~hmac=a0a482706f7295b5cfa435a25bdd546523b64a8af2a630c0e601199011b30fdf&w=996" alt="Abarrotes">
+            <button data-categoria="abarrote">Abarrotes</button>
+        </div>
+        <div class="productoFiltro">
+            <img src="https://img.freepik.com/foto-gratis/patatas-crudas-tazon-madera_23-2148501597.jpg?t=st=1711331654~exp=1711335254~hmac=3358c82c34ebcb55862e87b4db47c6b07365eade5d79cf146e77d72750e0433f&w=996" alt="Raices y tuberculos">
+            <button data-categoria="raices-tuberculos">Raíces y Tubérculos</button>
+        </div>
+
+     </section>
+     <section>
+        <h1 class="productosFiltrados">Productos Disponibles</h1>
+     </section>
+     
+    <section class="productos">
+
+            <div class="producto" data-categoria="hortaliza">
+                <img src="https://img.freepik.com/foto-gratis/vista-inferior-tomates-rojos-cortan-tomates-caja-madera-cuadro-negro_140725-146202.jpg?t=st=1710282374~exp=1710285974~hmac=1fcb0d7a5429c1d04e8c32a4d54c69289ddd31c99b656f04ea545eefc348bf6f&w=1380" alt="Producto 1">
+                <h2>Tomate</h2>
+                <div class="itemsPrecio">
+                    <p class="txtPrecio">Precio kg: </p>
+                    <p>₡1200.0</p>
+                </div>
+                <label for="cantidad">Cantidad: <input type="number" id="cantidad" min="1" value="1"></label>
+                <button onclick="agregarAlCarrito(1)"> 
+                Agregar al carrito<i class="fas fa-shopping-cart"></i>
+                </button>
+                <div class="extraInfo">
+                    <h3 class="nombreTramo">Tramo A</h3>
+                    <h3  class="categoria">Hortaliza</h3>
+                </div>
+                
+            </div>
+
+            <div class="producto" data-categoria="hortaliza">
+                <img src="https://img.freepik.com/foto-gratis/ajo-crudo-fresco-listo-cocinar_1150-42635.jpg?t=st=1710261193~exp=1710264793~hmac=c8bcdef761ecef904a45fb4580f2170ef9b95e686a36635b729a659e113cfb25&w=1380" alt="Producto 2">
+                <h2>Ajo</h2>
+                <div class="itemsPrecio">
+                    <p class="txtPrecio">Precio kg: </p>
+                    <p>₡800.0</p>
+                </div>
+                <label for="cantidad">Cantidad: <input type="number" id="cantidad" min="1" value="1"></label>
+                <button onclick="agregarAlCarrito(1)"> 
+                Agregar al carrito<i class="fas fa-shopping-cart"></i>
+                </button>
+                <div class="extraInfo">
+                    <h3 class="nombreTramo">Tramo A</h3>
+                    <h3  class="categoria"> Fruta</h3>
+                </div>
+            </div>
+
+            <div class="producto" data-categoria="hortaliza">
+                <img src="https://img.freepik.com/foto-gratis/cebollas-crudas-cortadas_144627-41767.jpg?t=st=1710260985~exp=1710264585~hmac=00d09894ed1017cb616b7f98a2dadc6542ea9736ce2d9ebd3cc7ec087e935823&w=740" alt="Producto 2">
+                <h2>Cebolla</h2>
+                <div class="itemsPrecio">
+                    <p class="txtPrecio">Precio kg: </p>
+                    <p>₡1000.0</p>
+                </div>
+                <label for="cantidad">Cantidad: <input type="number" id="cantidad" min="1" value="1"></label>
+                <button onclick="agregarAlCarrito(1)"> 
+                Agregar al carrito<i class="fas fa-shopping-cart"></i>
+                </button>
+                <div class="extraInfo">
+                    <h3 class="nombreTramo">Tramo A</h3>
+                    <h3  class="categoria"> Hortaliza</h3>
+                </div>
+            </div>
+
+            <div class="producto" data-categoria="fruta">
+                <img src="https://walmartcr.vtexassets.com/arquivos/ids/547320/Ayote-Escalopin-Empacado-250Gr-7-32150.jpg?v=638441698037070000" alt="Producto 2">
+                <h2>Ayote</h2>
+                <div class="itemsPrecio">
+                    <p class="txtPrecio">Precio kg: </p>
+                    <p>₡400.0</p>
+                </div>
+                <label for="cantidad">Cantidad: <input type="number" id="cantidad" min="1" value="1"></label>
+                <button onclick="agregarAlCarrito(1)"> 
+                Agregar al carrito<i class="fas fa-shopping-cart"></i>
+                </button>
+                <div class="extraInfo">
+                    <h3 class="nombreTramo">Tramo A</h3>
+                    <h3  class="categoria"> Hortaliza</h3>
+                </div>
+            </div>
+
+            <div class="producto" data-categoria="hortaliza">
+                <img src="https://images.pexels.com/photos/10487661/pexels-photo-10487661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Producto 2">
+                <h2>Vainica</h2>
+                <div class="itemsPrecio">
+                    <p class="txtPrecio">Precio kg: </p>
+                    <p>₡600.0</p>
+                </div>
+                <label for="cantidad">Cantidad: <input type="number" id="cantidad" min="1" value="1"></label>
+                <button onclick="agregarAlCarrito(1)"> 
+                Agregar al carrito<i class="fas fa-shopping-cart"></i>
+                </button>
+                <div class="extraInfo">
+                    <h3 class="nombreTramo">Tramo A</h3>
+                    <h3  class="categoria"> Hortaliza</h3>
+                </div>
+            </div>
+
+            <div class="producto" data-categoria="hortaliza">
+                <img src="https://imagenes.eltiempo.com/files/image_1200_600/uploads/2023/02/27/63fcee1c6b71b.jpeg" alt="Producto 2">
+                <h2>Tomate</h2>
+                <div class="itemsPrecio">
+                    <p class="txtPrecio">Precio kg: </p>
+                    <p>₡1200.0</p>
+                </div>
+                <label for="cantidad">Cantidad: <input type="number" id="cantidad" min="1" value="1"></label>
+                <button onclick="agregarAlCarrito(1)"> 
+                Agregar al carrito<i class="fas fa-shopping-cart"></i>
+                </button>
+                <div class="extraInfo">
+                    <h3 class="nombreTramo">Tramo A</h3>
+                    <h3  class="categoria"> Hortaliza</h3>
+                </div>
+            </div>
+            
+            <div class="producto" data-categoria="hortaliza">
+                <img src="https://img.freepik.com/foto-gratis/calabacin-verde-fresco-rodajas-sobre-escritorio-madera-gris_179666-51.jpg?t=st=1710282522~exp=1710286122~hmac=f802dccbd3469ac5a181f8d2cf3838474324db0ba1c4c9c056e75d06c882e1a9&w=740" alt="Producto 2">
+                <h2>Calabacin</h2>
+                <div class="itemsPrecio">
+                    <p class="txtPrecio">Precio kg: </p>
+                    <p>₡1200.0</p>
+                </div>
+                <label for="cantidad">Cantidad: <input type="number" id="cantidad" min="1" value="1"></label>
+                <button onclick="agregarAlCarrito(1)"> 
+                Agregar al carrito<i class="fas fa-shopping-cart"></i>
+                </button>
+                <div class="extraInfo">
+                    <h3 class="nombreTramo">Tramo A</h3>
+                    <h3  class="categoria"> Hortaliza</h3>
+                </div>
+            </div>
+            <div class="producto" data-categoria="hortaliza">
+                <img src="https://images.squarespace-cdn.com/content/v1/5dc30cbda2d4e36f73f0e4f0/1580406986896-AE5JKQ9FDZ1Q5NZKEFYD/Germinar+alfalfa.jpg" alt="Producto 2">
+                <h2>Alfalfa</h2>
+                <div class="itemsPrecio">
+                    <p class="txtPrecio">Precio kg: </p>
+                    <p>₡1200.0</p>
+                </div>
+                <label for="cantidad">Cantidad: <input type="number" id="cantidad" min="1" value="1"></label>
+                <button onclick="agregarAlCarrito(1)"> 
+                Agregar al carrito<i class="fas fa-shopping-cart"></i>
+                </button>
+                <div class="extraInfo">
+                    <h3 class="nombreTramo">Tramo A</h3>
+                    <h3  class="categoria"> Hortaliza</h3>
+                </div>
+            </div>   
+    </section>
+
+    <section id="resultadosBuscador"></section>
+    <footer id="footer">
+        <div id="somosFooter">
+            <h1>Quiénes somos</h1>
+            <p>Somos una empresa costarricense comprometida con la  promoción y venta de productos agropecuarios nacionales de la más alta calidad. Nuestro objetivo es fomentar el consumo de productos locales, apoyando a los agricultores de nuestra región.</p>
+        </div>
+        <div id="CopyrightFooter">
+            
+        </div>
+        <div id="contactoFooter">
+            <h1>Contáctenos</h1>
+            <p><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i>@agronline</a> </p>
+            <p><a href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-square"></i>@agronline</a></p>
+            <p><a href="https://wa.me/50683970896" target="_blank"><i class="fab fa-whatsapp-square"></i></a> 8000-0000</p>  
+            <img id="logoFooter" src="img/logoVertical.png" alt="logoAgronline" >
+            <br>
+            <p><span> Copyright 2024</span></p>      
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/footerHeaderNav.js"></script>
+    <script src="/Public/js/landingcomprador.js"></script>
+    <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
+</body>
+</html>
