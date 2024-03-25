@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>libro</title>
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+
+    <form action="">
+
+        <br>
+        <label>Ajuntar Imagen:</label> <input type="file" name="imagen" accept="image/jpeg, image/ png"/>
+    
+        <br>
+        Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico: ( ed.). Paracuellos de Jarama, Madrid, RA-MA Editorial. Recuperado de https://elibro.net/es/ereader/ucenfotec/106494?page=83.
+        <label>Rango:</label> <input type="range" min="1" max="5" step= "1" value="3"/> 
+
+        <br>
+        <label>Color:</label> <input type="color" value="#FF0000"/>
+
+        <br>
+        <!-- para que el usuario no  pueda seleccionar todos los radios, se debe ponerle a todos el mismo NAME -->
+        
+            <input type="radio" name="opcion"/>
+            <label>Opción excluyente</label> 
+            
+            <input type="radio" name="opcion"/>
+            <label>Opción excluyente</label>
+            
+            <input type="radio" name="opcion" checked/>
+            <label>Opción excluyente activa</label> 
+        <br>
+        
+        <input type="checkbox" name="paramVerif1"/> 
+        <label>Casilla de verificación:</label> 
+        
+        <input type="checkbox" name="paramVerif2" checked/>
+        <label>Casilla de verificación activa:</label> 
+
+        <br>
+        <fieldset>
+        <label>Lista tipo dropdown pero no tiene visualización asociada y solo sirve para indicar los valores</label><input type="text" name="paramLista" list="opciones"> <datalist id="opciones"> <option value="opcion1"> <option value="opcion2"> <option value="opcion3"> </datalist> 
+        <br>
+        <label>Lista con etiquetas donde el atributo label que se visualizará en lugar del valor de la opción:</label> <input type="url" name="paramURLs" list="urls"> <datalist id="urls"> <option label="Buscador Google" value="http://www.google.es"> <option label="Buscador Bing" value="http://www.bing.es"> <option label="Buscador Yahoo" value="http://www.yahoo.es"> </datalist>
+        <br>        
+
+        <label>Lista de selección</label> 
+        <!-- el value permite obtener lo que el usuario seleccionó -->
+        <select name="paraSeleccion">
+            <option value="opcion1">Primera opción</option> 
+            <option value="opcion2">Segunda opción</option>
+            <option value="opcion3">Tercera opción</option> 
+        </select>
+        
+        <br>
+        </fieldset>
+        <label>varios Email lleva atributo multiple:</label> <input type="email" name="paramEmail" multiple/> 
+        <br>
+    </form>
+
+</body>
+</html>
