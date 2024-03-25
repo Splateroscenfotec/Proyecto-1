@@ -4,31 +4,63 @@ body {
     padding: 0;
 }
 
+#comprador{
+    background-color: #93C4A9;
+    border-radius: 10px;
+}
 
-.tab {
-    display: inline-block;
-    padding: 10px 20px;
+#vendedor{
+    background-color: #D1E4D8;
+    border-radius: 10px;
+}
+
+.comprador {
+    background-color: #93C4A9;
+    border-radius: 10px;
+}
+
+.vendedor{
+    background-color: #D1E4D8;
+    border-radius: 10px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px 40px; 
+    
+}
+
+
+.menu p {
+    margin: 5px;
+    padding: 20px 20px;
     cursor: pointer;
+    border-radius: 7px;
+    margin-top: -30px;
 }
 
-.tabContent {
+.menu p:hover {
+    background-color: #4CAF50; 
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tabcontent {
+    border-top: 2px solid  #FFC657; 
     display: none;
-    padding: 20px;
+    padding: 35px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
 }
 
-.show {
+.active {
     display: block;
-}
-
-.hide {
-    display: none;
-}
-
-
-.contenedor {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 .campo {
@@ -36,9 +68,15 @@ body {
 }
 
 label {
-    display: block;
+    line-height: 2.0;
+    font-family: Roboto;
+    color: #42553F;
+    font-size: 1.075rem;
     font-weight: bold;
-}
+   } 
+   
+
+/*est seccion controla los inputs en general */
 
 input[type="text"],
 input[type="email"],
@@ -54,51 +92,27 @@ select {
 }
 
 button {
-    background-color: #4CAF50;
-    color: black;
-    padding: 10px 20px;
+     border-radius: 5px;
+    color: #42553F;
+    background-color: #f7953e;
+    font-size: .9rem;
+    font-weight: bold;
+    padding: 10px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
+    margin-top: 20px;
+    width: 45%;
+  }
 button:hover {
-    background-color: #45a049;
-}
+    background-color: #d8e269;
+    color: #1E2822;
+    cursor: pointer;
+  }
 
 .checkbox {
     margin-top: 10px;
 }
 
 .footer {
-    background-color: #f1f1f1;
+    background-color: #d5e7ce;
     text-align: center;
-    padding: 10px 0;
 }
-
-/* Style the tab buttons */
-.tablink {
-    background-color: #f2f2f2;
-    float: left;
-    border: 1px solid #ccc;
-    outline: none;
-    cursor: pointer;
-    padding: 10px 15px;
-    font-size: 18px;
-}
-
-/* Change background color of buttons on hover */
-.tablink:hover {
-    background-color: #ddd;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-
-/* Add your additional styling here */

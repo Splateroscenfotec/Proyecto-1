@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>agronline - Inicio</title>
+    <title>agronline - Registro</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/footerHeaderNav.css">
@@ -17,55 +17,24 @@
     <header>     
         <div id="header">
             <div id="logo"><a href="indexagronline.html"><img src="img/logo.png" alt="logoAgronline" ></div></a>
-<!--     
-            <div class="buscador">
-                <input type="text"  placeholder="Buscar..." id="inputBuscador">
-                <button type="submit" id="btn-Buscador"><i class="fa fa-search"></i></button>
-             </div> -->
-    
-            <div id="headerLoginComprar">
-                <!-- <div id="login"><a><i class="fa fa-user" aria-hidden="true"></i><span>Iniciar sesión</span></div></a> -->
-                <!-- <div id="btn-Comprar"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>         -->
-            </div>
-            <br><span>&nbsp;</span>
         </div>
     
         <nav class="navbar">
             <p>Bienvenidos a la feria virtual</p>
         </nav>
-    
     </header>
 
-    
-    <section id="resultadosBuscador"></section>
-
-    <div class="tabs">
-        <button class="tablink" onclick="openTab('Vendedor')">Vendedor</button>
-        <button class="tablink" onclick="openTab('Comprador')">Comprador</button>
+    <div class="menu">
+        <p data-target="#comprador">Cliente</p>
+        <p data-target="#vendedor">Vendedor</p>
     </div>
-    
-    <section class="registro">
-        <br>
-        <div class="contenedor">
-            <h2>Registro</h2>
-            <form id="registro-form">
-                <div id="Vendedor" class="tabcontent">
-                    <div class="campo">
-                        <label for="numero-empresa">Número de Empresa</label>
-                        <input type="text" id="numero-empresa" name="numero-empresa">
-                    </div>
-                    <!-- Otros campos para Vendedor -->
-                </div>
-    
-                <div id="Comprador" class="tabcontent" style="display:none;">
-                    <div class="campo">
-                        <label for="cedula">Cédula</label>
-                        <input type="text" id="cedula" name="cedula">
-                    </div>
-                    <!-- Otros campos para Comprador -->
-                </div>
-    
-                <div class="campo">
+
+    <div class="content">
+        <div id="comprador" class="tabcontent active" data-content>
+            <h2>Registro de Cliente</h2>
+            <br>
+            <form action="" id="registro-form">
+                <div class="campo-tipo-identificacion">
                     <label for="tipo-identificacion">Tipo de Identificación</label>
                     <select name="tipo-identificacion" id="tipo-identificacion">
                         <option value="cedula">Cédula</option>
@@ -73,38 +42,100 @@
                         <option value="dimex">DIMEX</option>
                     </select>
                 </div>
-                <div class="campo">
+
+                <div class="campo-identificacion" required>
                     <label for="identificacion">Número de Identificación</label>
                     <input type="text" id="identificacion" name="identificacion">
                 </div>
-                <div class="campo">
+
+                
+                <div class="campo-nombre" required>
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre">
                 </div>
-                <div class="campo">
-                    <label for="apellidos">Apellidos</label>
+
+                <div class="campo-apellidos" required>
+                    <label for="apellidos">Apellido</label>
                     <input type="text" id="apellidos" name="apellidos">
                 </div>
-                <div class="campo">
+
+                <div class="campo-email" required>
                     <label for="email">Correo Electrónico</label>
                     <input type="email" id="email" name="email">
                 </div>
-                <div class="campo">
+
+                <div class="campo-telefono" required>
                     <label for="telefono">Teléfono</label>
                     <input type="tel" id="telefono" name="telefono">
                 </div>
-                <div class="campo">
+
+                <div class="campo-contrasena" required>
                     <label for="contrasena">Contraseña</label>
                     <input type="password" id="contrasena" name="contrasena">
                 </div>
-                <div class="campo">
+
+                <div class="campo-terms" required>
                     <input type="checkbox" id="terms" name="terms">
                     <label for="terms">Aceptar términos y condiciones</label>
                 </div>
-                <button class="boton-registro">Registrarse</button>
+                <button class="boton-registro" type="button" id="btn-guardar">Registrarse</button>
             </form>
         </div>
-    </section>
+
+        <div id="vendedor" class="tabcontent" data-content>
+            <h2>Registro de Vendedor</h2>
+            <br>
+                <form action="" id="registro-form-vendedor">
+        
+                    <div class="campo-tipo-identificacion">
+                        <label for="tipo-identificacion">Tipo de Identificación</label>
+                        <select name="tipo-identificacion" id="tipo-identificacion">
+                            <option value="cedula">Cédula</option>
+                            <option value="pasaporte">Pasaporte</option>
+                            <option value="dimex">DIMEX</option>
+                        </select>
+                    </div>
+    
+                    <div class="campo-identificacion" required>
+                        <label for="identificacion">Número de Identificación</label>
+                        <input type="text" id="identificacion" name="identificacion">
+                    </div>
+    
+                    
+                    <div class="campo-nombre" required>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+    
+                    <div class="campo-apellidos" required>
+                        <label for="apellidos">Apellido</label>
+                        <input type="text" id="apellidos" name="apellidos">
+                    </div>
+    
+                    <div class="campo-email" required>
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+    
+                    <div class="campo-telefono" required>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+    
+                    <div class="campo-contrasena" required>
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" id="contrasena" name="contrasena">
+                    </div>
+    
+                    <div class="campo-terms" required>
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms">Aceptar términos y condiciones</label>
+                    </div>
+    
+                    <button class="boton-registro" type="button" id="btn-guardar-vendedor">Registrarse</button>
+                </form>
+            </div>
+        </div>
     
     <footer id="footer">
         <div id="somosFooter">
@@ -124,19 +155,12 @@
             <p><span> Copyright 2024</span></p>
         </div>
     </footer>
-    
-    <script>
-        function openTab(tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            document.getElementById(tabName).style.display = "block";
-        }
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/footerHeaderNav.js"></script>
     <script src="js/indexagronline.js"></script>
-    <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin
+    <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
+    <script src="/Public/js/registroCuenta.js" defer></script>
+    
+</body>
+</html>
