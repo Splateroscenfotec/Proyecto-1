@@ -193,19 +193,21 @@ span{
 #informacionDeProductos{
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 450px;
     margin-left: 100px;
     padding: 1px;
-
+    border: solid red;
 }
-
+.botones{
+    padding: 10px 10px 10px 100px;
+}
 #fotoProducto{
     height: 500px;
     width: 350px;
     padding: 15px;
 }
 
-#botonRegistrar{
+#botonRegistrar {
     border-radius: 5px;
     color: #1E2822;
     background-color: #f7953e;
@@ -218,7 +220,33 @@ span{
     color: #1E2822;
     cursor: pointer;
   }
+  #botonEditar {
+    border-radius: 5px;
+    color: #1E2822;
+    background-color: #f7953e;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+  }
+#botonEditar:hover {
+    background-color: #d8e269;
+    color: #1E2822;
+    cursor: pointer;
 
+}
+#botonEliminar {
+    border-radius: 5px;
+    color: #1E2822;
+    background-color: #f7953e;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+  }
+#botonEliminar:hover {
+    background-color: #d8e269;
+    color: #1E2822;
+    cursor: pointer;
+  }
 #contenedorImagen{
     display: flex;
     height: 250px;

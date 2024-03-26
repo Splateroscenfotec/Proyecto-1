@@ -5,7 +5,32 @@ const precioP = document.querySelector("#precio")
 const cantidadP = document.querySelector("#cantidad")
 const impuestosP = document.querySelector("#impuestos")
 const registrabtn = document.querySelector("#botonRegistrar")
+const editarbtn = document.querySelector("#botonEditar")
+const eliminarbtn = document.querySelector("#botonEliminar")
 
+
+function limpiarCampos() {
+    nombreP.value="";
+    descripcionP.value="";
+    inventarioP.value="";
+    precioP.value="";
+    cantidadP.value="";
+    impuestosP.value="";
+}
+/*-----------------------------Esta funcion verifica los campos en el formulario-----------------------*/
+function ValidarCampos() {
+    let error = true;
+    let campos_requeridos = document.querySelectorAll("#registrarProductos [required]");
+    for (let i = 0; i < campos_requeridos.length; i++) {
+      if (campos_requeridos[i].value !== "") {
+        campos_requeridos[i].classList.remove("error");
+      } else {
+        campos_requeridos[i].classList.add("error");
+        error = false;
+      }
+    }
+    return error;
+  }
 /*-----------------------------Esta funcion verifica que no hayan campos vacios en el formulario-----------------------*/
 function ValidarCamposVacios() { 
     let error = false;
@@ -84,8 +109,8 @@ function validarImpuesto() {
 
 
 
-/* --------------Esta funcion se encarga de ejecutar todas las funciones creadas arriba y arrojar el mensaje de error o validación--------------------------*/
-function principal() {
+/* --------------Esta funcion se encarga de ejecutar las funciones de registro y arrojar el mensaje de error o validación--------------------------*/
+function principalRegistro() {
     let error_campos_vacios= ValidarCamposVacios();
     let errorEnNombre = validarnombre();
     let errorEnDescripcion = validarDescripcion();
@@ -138,14 +163,85 @@ function principal() {
                 text: "Su solicitud se envió correctamente",
                 icon: "success",
               });
+              limpiarCampos();
+            }  
+    }
+/* --------------Esta funcion se encarga de ejecutar las funciones de edicion y arrojar el mensaje de error o validación--------------------------*/
+
+function principalEditar() {
+    let error_campos= ValidarCampos();
+    let errorEnNombre = validarnombre();
+    let errorEnDescripcion = validarDescripcion();
+    let errorEnPrecio = validarPrecio();
+    let errorEnImpuestos = validarImpuesto();
+
+    if(error_campos){
+        Swal.fire({
+            title: "Alerta",
+            text: "Seleccionaste edición de productos existentes",
+            icon: "warning",
+            confirmButtonText:"Entendido!"
+          });
+    }
+    else if (errorEnNombre) {
+        Swal.fire({
+            title: "El nombre de producto",
+            text: "Debe usar unicamente letras",
+            icon: "warning",
+            confirmButtonText:"Entendido!"
+        });
+    }
+    else if (errorEnDescripcion) {
+        Swal.fire({
+            title: "El nombre de la descripción",
+            text: "Debe usar unicamente letras",
+            icon: "warning",
+            confirmButtonText:"Entendido!"
+        });
+    }
+    else if (errorEnPrecio) {
+        Swal.fire({
+            title: "En el precio",
+            text: "Debe usar unicamente números",
+            icon: "warning",
+            confirmButtonText:"Entendido!"
+        });         
+    }
+    else if (errorEnImpuestos) {
+        Swal.fire({
+            title: "En los impuestos",
+            text: "Debe usar unicamente números y el signo de porcentaje",
+            icon: "warning",
+            confirmButtonText:"Entendido!"
+        });        
+    }
+          else{
+            Swal.fire({
+                title: "Información Correcta",
+                text: "Su solicitud se envió correctamente",
+                icon: "success",
+              });
+              
             }  
     }
 
+/* --------------Esta funcion se encarga de ejecutar las funciones de eliminar y arrojar el mensaje de error o validación--------------------------*/
+
+function principalEliminar(){
+    Swal.fire({
+        title: "¿Estas seguro que quieres continuar?",
+        text: "Seleccionaste eliminar un producto existente",
+        icon: "warning",
+        confirmButtonText:"Entendido!"
+      })
+}
     /* --------------Esto funciona para subir imagenes--------------------------*/
 
     let loadFile = function (event) {
         let image = document.getElementById("adjuntarFoto");
         image.src = URL.createObjectURL(event.target.files[0]);
       };
-      
-registrabtn.addEventListener("click", principal);
+
+registrabtn.addEventListener("click", principalRegistro);
+editarbtn.addEventListener("click", principalEditar);
+eliminarbtn.addEventListener("click", principalEliminar)
