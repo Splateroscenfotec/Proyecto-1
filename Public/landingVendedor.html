@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Inicio Vendedor </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/landingVendedor.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="icon" href="favicon.png">        
+</head>
+
+<body>
+    <header>     
+    <div id="header">
+        <div id="logo"><a href="indexagronline.html"><img src="img/logo.png" alt="logoAgronline" ></div></a>
+
+        <div class="buscador">
+            <input type="text"  placeholder="Buscar..." id="inputBuscador">
+            <button type="submit" id="btn-Buscador"><i class="fa fa-search"></i></button>
+         </div>
+
+        <div id="headerLoginComprar">
+            <div id="login"><a><i class="fa fa-user" aria-hidden="true"></i><span>Iniciar sesión</span></div></a>
+            <div id="btn-Comprar"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>        
+        </div>
+        <br><span>&nbsp;</span>
+    </div>
+
+    <nav class="navbar">
+        <a href="indexagronline.html" target="_blank">Inicio &nbsp;</a>
+        <a>Inventario &nbsp;</a>
+        <a>Reportes &nbsp;</a>
+        <a>Reseñas &nbsp;</a>
+    </nav>
+
+    </header>
+<!-- Después del header -->
+
+<div class="linea"></div>
+
+<section class="main-content">
+    <div class="perfil-container">
+        <div class="miPerfil">
+                <img src="img/profile.webp " id="fotoMiPerfilOutput" alt="foto de perfil" />
+                <br>
+                <br>
+                <h2>Nombre tramo</h2>
+                <button class="boton-iniciar">Editar Perfil</button>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="cajas-container">
+        <div class="caja">
+            <h3>Productos Inventario</h3>
+            <ul>
+                <li>Agregar</li>
+                <li>Editar</li>
+                <li>Eliminar</li>
+            </ul>
+        </div>
+        <div class="caja">
+            <h3>Reportes</h3>
+            <ul>
+                <li>Categorías vendidas</li>
+                <li>Productos vendidos</li>
+                <li>Ganancias realizadas</li>
+            </ul>
+        </div>
+        <div class="caja">
+            <h3>Clientes</h3>
+            <ul>
+                <li>Compras clientes</li>
+                <li>Reseñas</li>
+            </ul>
+        </div>
+    </div>
+    <div class="ganancias-container">
+        <h3>Ganancias</h3>
+        <div class="placeholderGanancias">
+        <img src="/Public/img/grafico-ganancias.png.png" alt="Gráfico Ganancias">
+        </div>
+    </div>
+</section>
+<!-- -------------------------------<section id ="AQUI EMPIEZA SU WIREFRAME"></section>------------------------------- -->
+
+
+<section id="resultadosBuscador"></section>
+    <footer id="footer">
+        <div id="somosFooter">
+            <h1>Quiénes somos</h1>
+            <p>Somos una empresa costarricense comprometida con la  promoción y venta de productos agropecuarios nacionales de la más alta calidad. Nuestro objetivo es fomentar el consumo de productos locales, apoyando a los agricultores de nuestra región.</p>
+        </div>
+        <div id="CopyrightFooter">
+            
+        </div>
+        <div id="contactoFooter">
+            <h1>Contáctenos</h1>
+            <p><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i>@agronline</a> </p>
+            <p><a href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-square"></i>@agronline</a></p>
+            <p><a href="https://wa.me/50683970896" target="_blank"><i class="fab fa-whatsapp-square"></i></a> 8000-0000</p>  
+            <img id="logoFooter" src="img/logoVertical.png" alt="logoAgronline" >
+            <br>
+            <p><span> Copyright 2024</span></p>      
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/footerHeaderNav.js"></script>
+    <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
+</body>
+</html>

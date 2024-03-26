@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+html {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(237, 242, 194, .01) ;
+}
+
+/* --------------------------------------Inicio código header-------------------------------------- */
+header{
+    height: 250px;
+    width: 90%;
+    position: sticky; 
+    top: 0;
+}
+
+#header{
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+span{
+    line-height: 325;
+    margin-bottom: 120px;
+    padding-bottom: 180px;
+}
+
+    #logo{
+        width: 25%;        
+    }
+    #logo img {
+        width:100%
+    }
+    #logo img:hover{
+        background-color: #fff;
+    }
+
+
+    .buscador {
+        width: 50%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;    
+        margin-left: 20px;
+      }
+      
+      .buscador input {
+        width: 80%;
+        background-color: #fdd1a9;
+        border-right: none;
+        padding: 5px;
+        height: 20px;
+        border-radius: 5px 0 0 5px;
+        /* outline: none; */
+        border: solid 3px  #fdd1a9;;
+        color: #42553F;
+      }
+       
+      
+      .buscador button {
+        width: 40px;
+        height: 36px;
+        border: 1px solid #9cca92;
+        background-color: #9cca92;
+        text-align: center;
+        color: #42553F;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .buscador button:hover {
+        background-color: #f7953e;
+        border: 1px solid #f7953e;
+        cursor: pointer;
+      } 
+    
+#headerLoginComprar{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;    
+}
+#headerLoginComprar a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #617c5c;
+    font-family: Roboto;
+    line-height: 2.5;
+}
+    #login{
+        padding-left: 50px;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #login span {
+        font-size: .45rem;
+        font-family: Roboto;
+        line-height: 2.5;
+    }
+    #login i{
+        font-size: 2rem;
+        color: #617c5c
+    }
+    #btn-Comprar{
+        flex-direction: column;
+        font-size: 2.5rem;  
+    }
+
+    a:hover{
+        cursor: pointer;
+        font-weight: 700;
+    }
+/* --------------------------------------Fin código header --------------------------------------*/
+
+/* --------------------------------------Inicio código nav-------------------------------------- */
+
+.navbar{
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    background: rgb(156,202,146);
+    background: linear-gradient(90deg, rgba(156,202,146,1) 65%, rgba(255,255,255,0) 90%);
+    height: 5px;
+    width: 100%;  
+    padding: 19px;
+    
+} 
+
+.navbar a{
+    padding: 10px;
+    color: #1E2822;  
+    font-size: 1rem;
+    font-family: Roboto;    
+    font-weight: 500;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #d5e7ce;
+    color: #42553F;
+    padding-top: 15px;
+    padding-bottom: 15x;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+/*-------------------------------------- Fin código nav-------------------------------------- */
+/* Después del código del header */
+.linea {
+    width: 100%;
+    height: 5px;
+    background-color: #42553F;
+    margin-top: 60px;
+}
+
+.main-content {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;     
+}
+
+.miPerfil h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #42553F;
+}
+
+.miPerfil img {
+    max-width: 150px; /* Establece el ancho máximo que desees */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+
+.boton-iniciar {
+    border-radius: 5px;
+    width: 136px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #F7953E;
+    color: #000;
+    border: none;
+    margin-right: 150px;
+    cursor: pointer;
+    clear: left;
+}
+
+button:hover {
+    background-color: #d8e269;
+    color: #1E2822;
+    cursor: pointer;
+  }
+
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+    margin-right: 1100px;
+    margin-bottom: 200px;
+}
+
+
+.caja {
+    border: 1px solid #42553F;
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 6px;
+    height: 79px;
+    background-color:#D1E4D8;
+}
+
+.caja h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #42553F;
+}
+
+.ganancias-container h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #42553F;
+}
+
+.caja ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.caja ul li {
+    cursor: pointer;
+    margin: 3px;
+    font-size: 1rem;
+    color: #42553F;
+    list-style-type: disc;
+}
+
+.ganancias-container {
+    width: 619px;
+    height: 283px;
+    border: 1px solid #42553F;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 415px;
+    margin-top: -432px;
+    background-color:#93C4A9;
+}
+
+.placeholderGanancias {
+    width: 581px;
+    height: 230px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px dashed #42553F;
+    background-color:#ffffff;
+}
+
+.placeholderGanancias img {
+    max-width: 100%; /* La imagen se ajusta al ancho máximo del contenedor */
+    max-height: 100%; /* La imagen se ajusta a la altura máxima del contenedor */
+    height: auto;
+    margin-left: 110px; /* La altura se ajusta automáticamente para mantener la proporción */
+}
+
+
+
+
+/* --------------------------------------Inicio código sección Resultados del Buscador-------------------------------------- */
+#resultadosBuscador {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+/*-------------------------------------- Fin código sección Resultados del Buscador-------------------------------------- */
+
+
+
+
+/* --------------------------------------Inicio código footer-------------------------------------- */
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+    background-color: #d5e7ce;
+    }
+#somosFooter{
+    width: 40%;
+    line-height: 1.5;
+    /* padding: 65px */
+}
+#footer h1{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #617c5c;
+}
+#footer p{
+    font-family: Roboto;
+    font-size: .75rem;
+    color: #42553F;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #465b4f;
+    line-height: 2;
+}
+
+#CopyrightFooter{
+    width: 40%;
+    padding-left: 50px;
+    
+}
+
+#logoFooter{
+    width:50px;
+}
+
+#contactoFooter {
+    width: 20%;
+}
+
+#contactoFooter span{
+    font-size: .5rem;
+}
+
+/* --------------------------------------Fin código footer-------------------------------------- */
+
