@@ -1,0 +1,298 @@
+body{
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.paginaProductosTramos{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .titulos{
+      margin-bottom: 30px;
+      display: grid;
+      justify-content: left;
+      align-items: center;
+      text-align: left;
+      margin-left: 200px;
+  }
+  
+  .txt-ProductosDispo {
+    font-family: "Roboto";
+      font-size: 2.5rem;
+      font-weight: 800;
+      color:black;
+      margin-left: 100px;
+  }
+  
+  .txtTramo{
+    font-family: "Roboto";
+      font-size: 2.0rem;
+      font-weight: 600;
+      color:black;
+      margin-top: 20px;
+      margin-left: 100px;
+  }
+  
+  .productos{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, auto);
+      gap: 1.5rem;
+      margin: 0 auto;
+      width: 60%;
+  }
+  .producto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0.8rem;
+      border-radius: 5px;
+      background-color: rgb( 209,228,216,0.8); 
+  }   
+  .producto img {
+      margin: 0 auto;
+      width: 200px;
+      height: 160px;
+      object-fit:cover ;
+      border-radius: 10px 10px 10px 10px;
+      
+      
+  }
+  .producto h2 {
+        font-family: "Roboto";
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 0.5rem;
+  
+  }
+  .itemsPrecio {
+    font-family: "Roboto";
+      font-size: 1rem;  
+      display: flex;
+      align-items: baseline;
+  }
+  
+  .txtPrecio{
+      margin-right: 10px;
+      font-family: "Roboto";
+      font-size: 1rem;
+  }
+  
+  .producto h3{
+        font-family: "Roboto";
+      font-size: 1rem;
+  }
+  .producto label{
+    font-family: "Roboto";
+      font-size: 1rem;
+  }
+  
+  #cantidad{
+      border: none;
+      margin-top: 10px;
+      font-size: 1.0rem;
+      width: 30%;
+      border-radius: 5px;
+      text-align: center;
+  }
+  .producto button {
+    font-family: "Roboto";
+      font-size: 1.2rem;
+      justify-content: space-between;
+      max-width:100%;
+      margin-top: 10px;
+      background-color: #617c5c;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+     
+  }
+  .producto button:hover {
+      background-color: #9cca92;
+      
+  }
+  
+  .extraInfo{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+  }
+  
+  .nombreTramo{
+      margin-right: 60px;
+  }
+  
+  
+  .txtReseñas{
+    font-family: "Roboto";
+      font-size: 2.5rem;
+      color:black;
+      margin-top: 20px;
+      margin-left: 220px;
+  }
+  
+  .contenedorReseñas{
+      width: 975px;
+      height: 500px;
+      margin-left: 305px;
+      display: grid;
+      justify-content: center;
+      text-align: center;
+      background-color: rgb( 209,228,216,0.8); 
+      border-radius: 15px;
+      overflow: hidden;
+      overflow: scroll;
+  }
+  
+  .contenedorReseñas h2{
+    font-family: "Roboto";
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-top: 30px;
+  }
+  .filtroResennas{
+      margin-top: 10px;
+      width: 700px; 
+      margin-left: 120px;
+  }
+  .filtroResennas label{
+    font-family: "Roboto";
+      font-size: 1.2rem;
+      color:black;    
+      margin-left: 30px;
+  }
+  .filtroResennas input{
+    font-family: "Roboto";
+      font-size: 1.0rem;
+      color:black;    
+      margin-left: 15px;
+  }
+  .oculto {
+      display: none;
+    }
+  
+  table {
+      width: 100%;
+    }
+  
+  .encabezado{
+    font-family: "Roboto";
+      font-size: 1.2rem;
+      font-weight: 500;
+  }
+    th, td {
+      width: 400px;
+      height: 50px;
+      border: 2px solid black;
+      text-align: center;
+    }
+    
+    .section-resena{
+      width: 61.5%;
+      border-radius: 15px;
+      margin-top: 30px;
+      margin-left: 305px;
+      padding: 20px;
+      background-color: rgb( 209,228,216,0.8); 
+      text-align: center;
+    }
+  
+    .section-resena h3{
+      margin-top: 20px;
+      font-family: "Roboto";
+      font-size: 1.5rem;
+    }
+  
+    .formulario-resena{
+      margin-top: 30px;
+      margin-left: 20px;
+      font-family: "Roboto";
+      font-size: 1.3rem;
+      border-radius: 15px;
+      padding: 20px;
+      align-items: center;
+      background-color: #9cca92; 
+      height: 180px;
+      width: 90%;
+    }
+  .nuevaFecha{
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 10px;
+  }
+  
+  .nuevaFecha label{
+      padding-right: 100px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .nuevaFecha input{
+    font-family: "Roboto";
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+      height: 15px;
+      border-radius: 10px;
+      border: none;
+      text-align: center;
+      padding: 10px;
+  }
+  .nuevoComentario{
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 15px;
+  }
+  
+  .nuevoComentario label{
+      padding-right: 50px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .nuevoComentario textarea{
+    font-family: "Roboto";
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      width: 500px;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      text-align: center;
+      padding: 10px;
+  }
+  
+  .formulario-resena label{
+    font-family: "Roboto";
+      font-size: 1.4rem;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+  
+  .formulario-resena select{
+    font-family: "Roboto";
+      font-size: 1.0rem;
+      width: 200px;
+      height: 30px;
+      border-radius: 10px;
+  }
+  
+  .formulario-resena button{
+    font-family: "Roboto";
+      font-size: 1.0rem;
+      width: 200px;
+      height: 30px;
+      border-radius: 10px;
+      border: 1px solid gray;
+  }
+  
+  

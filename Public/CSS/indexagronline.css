@@ -91,4 +91,9 @@ html {
     color: #1E2822;
     cursor: pointer;
   }
+
+  #textoLanding a{
+    text-decoration: none;
+    color: #42553F;
+  }
 /* --------------------------------------Fin código registroLanding-------------------------------------- */
