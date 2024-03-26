@@ -164,7 +164,7 @@ function principal() {
     }else if(error_identificacion){
         Swal.fire({
             title: "Identificación incorrecta",
-            text: "Favor revisar la identificación, debe tener 9 dígitos",
+            text: "Favor revisar la identificación, debe tener 9 dígitos, sin espacios",
             icon: "warning",
             confirmButtonText:"Ok"
           });
@@ -215,4 +215,5 @@ function principal() {
 }
 
 btn_reservar.addEventListener("click", principal);
+btn_reservar_vendedor.addEventListener("click", principal);
 
