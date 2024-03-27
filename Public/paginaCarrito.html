@@ -36,10 +36,10 @@
         </div>
     
         <nav class="navbar">        
-            <a>Inicio</a>
-            <a>Producto</a>
-            <a>Compras</a>
-            <a>Reportes</a>
+          <a href="/Public/landingcomprador.html">Inicio</a>
+          <a href="/Public/landingcomprador.html#seccionProductosLanding">Productos</a>
+          <a href="/Public/paginaCarrito.html">Compras</a>
+          <a>Reportes</a>
         </nav>
     
     </header>
@@ -50,7 +50,7 @@
       <section class="txtProductos">
       <H2>Productos agregados</H2>
       </section>
-    <section class="carritoTotal">
+    <section id="seccionPagar" class="carritoTotal">
       <section class="carritoProductos">
         <ul>
             <li>
@@ -94,8 +94,8 @@
           <h2>Total a pagar</h2>
           <p>₡3.800</p>
           <div class="linkSeguirPagar">
-            <a href="#">Seguir comprando</a>
-            <a href="#">Proceder al pago</a>
+            <a href="/Public/landingcomprador.html#seccionProductosLanding">Seguir comprando</a>
+            <a href="/Public/paginaCarrito.html#seccionPagar">Proceder al pago</a>
           </div>
         </div>      
     </section>
@@ -114,7 +114,7 @@
               <img src="img/jcb.png" alt="JCB">
               <img src="img/american-express.png" alt="AmericanExpress">      
             </div>
-            <form class="formTarjeta">
+            <form  class="formTarjeta">
 
               <label for="tarjeta">Número de tarjeta</label>
               <input type="text" id="tarjeta" name="tarjeta" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" title="Ingrese el número de tarjeta de 16 dígitos" placeholder="1234-5678-9012-3456" required>

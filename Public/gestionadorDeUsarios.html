@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>agronline - Inicio</title>
+    <title>Administrador de Usuarios</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/gestionadorDeUsarios.css">    
@@ -30,8 +30,8 @@
 
     <nav class="navbar">
         <a href="indexagronline.html" target="_blank">Inicio &nbsp;</a>
-        <a>Usuarios &nbsp;</a>
-        <a>Catalogos &nbsp;</a>
+        <a href="gestionadorDeUsarios.html" target="_blank">Usuarios</a>
+        <a href="catalogoDeProductos.html" target="_blank">Catálogo</a>
         <a>Reportes &nbsp;</a>
     </nav>
 
@@ -60,8 +60,10 @@
                 <input type="radio" id="opcion2" name="opciones" value="opcion2">
                 <label for="opcion2">Juan Pedro Ruiz Gonzales(Vendedor)</label><br>
             
-            <button id="btn-AgregarNuevoUsuario">Agregar nuevo usuario</button>
+           
         </form>
+        <button id="btn-AgregarNuevoUsuario">Agregar nuevo usuario</button>
+
         </div>
         
         <div id="seleccionadorUsuario">
@@ -69,19 +71,27 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTglgQtNxBDllXaJqSDVC7TFSAZqTDxU9fSLA&usqp=CAU" id="adjuntarFoto"/>
                 </div>
                 <div id="ubicacionBotones">
-                    <button class="botones" onclick="BorrarPerfil()">Borrar</button>
-                    <button class="botones" onclick="editarPerfil()">Editar</button>
-                    <button class="botones" onclick="editarPerfil()" id="btn-Guardar">Guardar cambios</button>
+                    <button class="botones" onclick="BorrarPerfil()" id="btn-Borrar">Borrar</button>
+                    <button class="botones" onclick="editarPerfil()" id="btn-Editar">Editar</button>
+                    <button class="botones" onclick="guardarPerfil()" id="btn-Guardar">Guardar cambios</button>
                 </div>
-                <div id="datosDeUsuario">
-                        <h3>Nombre Completo:</h3>
-                        <li><i class="fa fa-user"></i> Juan Pedro Ruiz Gonzales</li><br>
-                        <h3>ID:</h3>
-                        <li><i class="fa fa-id-card-o"></i> 1-2345-6789</li><br>
-                        <h3>Teléfono:</h3>
-                        <li><i class="fa fa-phone"></i> 8884-2521</li><br>
-                        <h3>Email:</h3>
-                        <li><i class="fa fa-envelope-o"></i> Jpegro@gmail.com</li>         
+                <div id="datosDeUsuario"><br>
+                        <!-- <h3>Nombre Completo:</h3> -->
+                        <label for="nombreCompleto">Nombre completo </label> <span id="nombreCompletoOutput"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Juan Pedro Ruiz Gonzales</span><br>
+                        <input type="text" name="name" id="nombreCompleto" placeholder="Escriba su nombre completo" style="display: none;" required><br>
+                        <!-- <li><i class="fa fa-user"></i> Juan Pedro Ruiz Gonzales</li><br> -->
+                        <!-- <h3>ID:</h3> -->
+                        <label for="cedula">Cédula</label> <span id="cedulaOutput"><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;1-2345-6789</span><br>
+                        <input type="text" name="" id="cedula" placeholder="Digite su cédula" style="display: none;" required><br>
+                        <!-- <li><i class="fa fa-id-card-o"></i> 1-2345-6789</li><br> -->
+                        <!-- <h3>Teléfono:</h3> -->
+                        <label for="telefonoPerfil">Teléfono </label> <span id="telefonoPerfilOutput"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Mi teléfono</span><br>
+                        <input type="text" name="name" id="telefonoPerfil" placeholder="Digite su número telefónico" style="display: none;" required><br>
+                        <!-- <li><i class="fa fa-phone"></i> 8884-2521</li><br> -->
+                        <!-- <h3>Email:</h3> -->
+                        <label for="Email">Email </label> <span id="emailOutput"><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;Jpegro@gmail.com</span><br>
+                        <input type="text" name="name" id="Email" placeholder="Digite su email" style="display: none;" required><br>
+                        <!-- <li><i class="fa fa-envelope-o"></i> Jpegro@gmail.com</li>          -->
                     
                 </div>
                 
@@ -111,7 +121,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="javaScript/gestionDeUsarios.js"></script>
+    <script src="js/gestionDeUsarios.js"></script>
     <script src="https://kit.fontawesome.com/fa2ce6a4c8.js" crossorigin="anonymous"></script>
 </body>
 </html>
