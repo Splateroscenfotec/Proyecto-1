@@ -22,11 +22,7 @@
                 <input type="text"  placeholder="Buscar..." id="inputBuscador">
                 <button type="submit" id="btn-Buscador"><i class="fa fa-search"></i></button>
              </div>
-    
-            <div id="headerLoginComprar">
-                <div id="login"><a><i class="fa fa-user" aria-hidden="true"></i><span>Iniciar sesión</span></a></div>
-                <div id="btn-Comprar"><a><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>        
-            </div>
+
             <br><span>&nbsp;</span>
         </div>
     
@@ -51,29 +47,32 @@
                         <option>DIMEX</option>
                     </select>
                    </div>
-
                    <br>
-            <div class="campo" required>
+            <form class="formCampo">
+
                 <label for="identificacion">Número de Identificación</label>
-                <input type="text" id="identificacion" name="identificacion">
-            </div>
-            <div class="campo" required>
+                <input type="text" id="identificacion" name="identificacion"pattern="[0-7]{1}-[0-9]{3}-[0-9]{3}" title="Ingrese el número de Identificación" placeholder="0-000-000"   required>
+                <br><br>
                 <label for="contrasena">Contraseña</label>
-                <input type="password" id="contrasena" name="contrasena">
+                <input type="password" id="contrasena" name="contrasena" title="Ingrese su contraseña" required>
+
+            </form>
+            
+            <div id="boton_iniciar">
+                <button type="button" id= btn_iniciar >Iniciar sesión</button>
             </div>
-            <button id=iniciar class="boton-iniciar">Iniciar sesión</button>
-            <span class="recuperar-contrasena">Recuperar contraseña</span>
+
+            <div class="recuperar-contrasena">Recuperar contraseña</div>
             <div class="separador"></div>
             <p class="nuevo">¿Eres nuevo en Agronline?</p>
             <br>
             <p class="registrarse-como">Registrarse como:</p>
             <div class="opciones-registro">
-                <button>Comprador</button>
-                <button>Vendedor</button>
+                <a href="/Public/registroCuenta.html">Comprador</a>
+                <a href="/Public/registroCuenta.html">Vendedor</a>
             </div>
         </div>
     </section>
-    
 
 
     <footer id="footer">
