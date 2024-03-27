@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>agronline - Inicio</title>
+    <title>Registro de productos</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/registroProductos.css">
@@ -27,20 +27,13 @@
         </div>
         <br><span>&nbsp;</span>
     </div>
-<<<<<<< HEAD
-    <nav id="nav">        
-        <a>Inicio &nbsp;</a>
-        <a>Inventario &nbsp;</a>
-        <a>Reportes &nbsp;</a>
-        <a>Reseñas &nbsp;</a>
-=======
 
     <nav class="navbar">
         <a href="indexagronline.html" target="_blank">Inicio &nbsp;</a>
-        <a>Usuarios &nbsp;</a>
-        <a>Catálogos &nbsp;</a>
-        <a>Reportes &nbsp;</a>
->>>>>>> 8083f17fcfd6e9f75b9fce1eb740d705f4443760
+        <a href="" target="_blank">Usuarios</a>
+        <a href="" target="_blank">Catálogos</a>
+        <a href="" target="_blank">Reportes</a>
+    
     </nav>
 
     </header>
@@ -64,14 +57,14 @@
 
 </div> 
     <form id="registrarProductos">
-    <div id="informacionDeProductos">
+    <div id="informacionDeProductos"><br>
     <label class="infoproducto" for="nombre">Nombre: </label>
     <input class="infoproducto" type="text" id="nombre" required><br>
 
     <!-- <label class="infoproducto" for="descripcion">Descripción:</label>
     <input class="infoproducto" type="text" id="descripcion" required><br> -->
     <label for="descripcion">Descripción:</label><br>
-    <textarea cols="50" rows="10"id="descripcion" required></textarea>
+    <textarea cols="50" rows="10"id="descripcion" required></textarea><br>
 
 
     <label for="categories">Categorías:</label>
@@ -94,7 +87,11 @@
     <label class="infoproducto" for="impuestos">Impuestos de venta:</label>
     <input class="infoproducto" type="text" id="impuestos" required><br>
 
+    <div class="botones">
     <button type="button" id="botonRegistrar">Registrar</button>
+    <button type="button" id="botonEditar">Editar</button>
+    <button type="button" id="botonEliminar">Eliminar</button>
+    </div>
 </div>
 
 </div>
